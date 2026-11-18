@@ -1,0 +1,64 @@
+---
+import { sections } from "../data/site";
+const path = Astro.url.pathname;
+---
+
+<header class="nav-shell" transition:persist="nav">
+  <nav class="nav glass" aria-label="Main">
+    <a href="/" class="mark" aria-label="Home"><span>rc</span></a>
+    <ul>
+      {sections.map((s) => (
+        <li>
+          <a href={s.href} aria-current={path.startsWith(s.href) ? "page" : undefined} data-nav>
+            {s.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<script>
+  // keep aria-current right while the nav persists across page transitions
+  document.addEventListener("astro:page-load", () => {
+    const p = location.pathname;
+    document.querySelectorAll<HTMLAnchorElement>("[data-nav]").forEach((a) => {
+      if (p.startsWith(a.getAttribute("href")!)) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+  });
+</script>
+
+<style>
+  .nav-shell {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; justify-content: center; padding: 14px 16px; pointer-events: none;
+  }
+  .nav {
+    pointer-events: auto;
+    display: flex; align-items: center; gap: 4px;
+    padding: 5px; border-radius: 999px; max-width: 100%;
+  }
+  .mark {
+    display: grid; place-items: center; width: 36px; height: 36px; flex: none; border-radius: 50%;
+    background: var(--iris); text-decoration: none;
+    font: italic 400 1.15rem/1 var(--serif); color: var(--ink);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+    transition: transform 0.6s var(--ease);
+  }
+  .mark span { transform: translateY(-1px); }
+  .mark:hover { transform: rotate(-12deg) scale(1.05); }
+  ul { display: flex; list-style: none; margin: 0; padding: 0; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+  ul::-webkit-scrollbar { display: none; }
+  a[data-nav] {
+    display: block; padding: 8px 14px; border-radius: 999px;
+    font-size: 0.875rem; font-weight: 500; color: var(--ink-2); text-decoration: none; white-space: nowrap;
+    transition: background 0.3s, color 0.3s;
+  }
+  a[data-nav]:hover { color: var(--ink); background: rgba(255, 255, 255, 0.75); }
+  a[data-nav][aria-current="page"] { color: var(--paper); background: var(--ink); }
+  @media (max-width: 420px) {
+    a[data-nav] { padding: 8px 10px; font-size: 0.82rem; }
+    .mark { width: 32px; height: 32px; }
+  }
+</style>

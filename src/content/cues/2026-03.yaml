@@ -1,0 +1,82 @@
+# Thoughts & Cues — 2026-03. Edit freely; text is Markdown.
+month: "2026-03"
+days:
+  - date: 2026-03-03
+    label: "Mar 3"
+    items:
+      - tag: "Music"
+        text: "[No madness](https://www.youtube.com/watch?v=N4RdKBt8qpU): interesting piece of modern Indian music recommended to me by a PhD student exploring opportunities of intersection between AI and Indian traditional music here at MIT."
+      - tag: "Music"
+        text: "[Basement Bhangra](https://youtu.be/C9qbZqrzbas?si=-QMcBRP3n176o5oa), from NYC-based artist DJ Rekha: more on “contemporary” fusion Indian music. Bhangra is a high-energy traditional folk dance originating from the region of Punjab. The music is played during the celebrations for the harvest season (April/May). This is an interesting blend between bhangra and dance/electronic music."
+      - tag: "Poetry"
+        text: "[Harlem](https://stuff.mit.edu/people/dpolicar/writing/poetry/poems/harlem.html). This poem, written by one of the main figures of the Harlem Renaissance, is so touching. I particularly appreciated the metaphor of the raisin drying in the sun."
+      - tag: "Computer Science"
+        text: "[Dmitry Krotov, Generative AI model through the lense of Dense Associative Memory](https://www.youtube.com/watch?v=lzYwzIkO89Q). Interesting talk about Energy-based models."
+  - date: 2026-03-05
+    label: "Mar 5"
+    items:
+      - tag: "Music"
+        text: "[Raymond Scott](https://en.wikipedia.org/wiki/Raymond_Scott): American composer and producer, a pioneer of electronica. Apart from his impressive “musical resume”, spanning across multiple genres, I got to know about him when I attended a lecture on synthesizers at MIT, and I was particularly amused by this experimental work I’m pasting below:"
+        sub:
+          - text: "[Soothing Sounds for Baby](https://en.wikipedia.org/wiki/Soothing_Sounds_for_Baby): a collection of… ambient electronic music originally meant to help his baby sleep. Link to Youtube [here](https://youtu.be/hGk3HYcgkPQ?si=ktnyDteh2F6NDibB). I swear, this is so sweet and simple, and so… trippy at the same time!"
+      - tag: "Music"
+        text: "[Reconsidering Raymond Scott](https://www.wbgo.org/music/2018-10-19/reconsidering-composer-raymond-scott-from-cartoons-to-the-cutting-edge-in-deep-dive): another article about him."
+      - tag: "Music"
+        text: "[Vangelis](https://youtu.be/Hqe-gakCb24?si=2B8lZwF98rp-bjjt), another great composer of the 20th century who experimented a lot with synths and electronic music. Among other things, known to the great public as composer of the “Blade Runner” soundtrack."
+        sub:
+          - text: "[This](https://youtu.be/GWggDMDhwIA?si=LuXk1kq_N5bv8lEw) video is an astonishing demonstration of what he could get out of a synth! It was incredible to watch for me, this man is an orchestra."
+  - date: 2026-03-07
+    label: "Mar 7"
+    items:
+      - tag: "Journalism"
+        text: "I’ve been following, remotely, a super interesting elective class at ETH on Dorothy Parker, a poet and journalist of the early 20th century. There are many things that I could say and share about her, but here I want to leave the link to this beautiful “love letter” to New York. [Dorothy Parker on New York](https://polyarchive.com/dorothy-parker-on-new-york-autumn-is-the-springtime-of-big-cities/): “London is satisfied, Paris is resigned, but New York is always hopeful”."
+  - date: 2026-03-10
+    label: "Mar 10"
+    items:
+      - tag: "Computational Neuroscience"
+        text: "[Image Reconstruction from Brain Activity](https://youtu.be/2voWM0bifX4?si=2nTuNuNwAnlW74AK): interesting presentation on a sci-fi like paper."
+      - tag: "Art"
+        text: "[Archibald Motley](https://share.google/dMjv08vAQ9tEha2RX): one of the most prominent artists from the Harlem Renaissance."
+      - tag: "Art"
+        text: "[Aaron Douglas](https://share.google/KdFHcn2gyhsUQVHEa): more on the Harlem Renaissance."
+      - tag: "Art"
+        text: "[J.C. Leyendecker](https://share.google/AyHSWsn1jZGT5Nbij): the other side of the New York of the Roaring Twenties… the white, aristocratic elite of the Upper East Side, to which Dorothy Parker belonged."
+  - date: 2026-03-29
+    label: "Mar 29"
+    items:
+      - tag: "Cinema"
+        text: "[Into the Wild](https://en.wikipedia.org/wiki/Into_the_Wild_(film)) (American, 2007): I haven’t seen it yet, but will watch it soon."
+      - tag: "Cinema"
+        text: "[Perfect Days](https://share.google/t1rLpLj40gcRUkTr4)(Japanese, 2023): follows the story of a public toilet cleaner in Tokyo. Same as above, haven’t seen it yet but would like to watch it soon."
+      - tag: "Cinema"
+        text: "[Castle in the Sky](https://en.wikipedia.org/wiki/Castle_in_the_Sky) (Japanese, animated, 1986): Studio Ghibli movie."
+      - tag: "Cinema"
+        text: "[Coraline](https://en.wikipedia.org/wiki/Coraline_(film))(American, 2009): stop-motion animated fantasy horror. Haven’t seen it yet, but in spirit it reminds me of [The Nightmare Before Christmas](https://en.wikipedia.org/wiki/The_Nightmare_Before_Christmas) (1993, also in stop-motion)."
+      - tag: "Cinema"
+        text: "[The Intouchables](https://en.wikipedia.org/wiki/The_Intouchables) (French, 2011): I watched this movie when it first came out. I remember I liked it."
+      - tag: "Cinema"
+        text: "My mind wandered to another French, unrelated movie I really liked: [Up For Love](https://en.wikipedia.org/wiki/Up_for_Love). I think it’s very delicate."
+      - tag: "Music"
+        text: "Twenty One Pilots: Stressed Out, Chlorine, Routines in the Night."
+      - tag: "TV"
+        text: "[Tear Along the Dotted Line](https://youtu.be/aT7XzkO_CmM?si=9p23PQIxBnGzRM6a): a short, Italian animated TV series (here dubbed in English) that came out during Covid and became so popular that Netflix decided to adapt it. It’s a very ironic, cynical and quite profound series that I particularly enjoyed at the time. I unfortunately couldn’t find free content on Youtube, but for sure it’s on Netflix, and worst case there should be other ways to find it…"
+      - tag: "Cinema"
+        text: "The Dead Poets Society."
+      - tag: "TV"
+        text: "[La Linea](https://en.wikipedia.org/wiki/La_Linea_(TV_series))"
+      - tag: "Policy"
+        text: "[OECD](https://www.oecd.org/en.html) ([Organisation for Economic Co-operation and Development](https://www.oecd.org/))"
+      - tag: "Policy"
+        text: "[OECD STI](https://www.oecd.org/en/about/directorates/directorate-for-science-technology-and-innovation.html) (Directorate for Science, Technology and Innovation)."
+  - date: 2026-03-30
+    label: "Mar 30"
+    items:
+      - tag: "Art"
+        text: "[The 2-thousand yard stare](https://www.tomlea.com/post/tom-lea-the-creator-of-the-two-thousand-yard-stare) war painting."
+  - date: 2026-03-31
+    label: "Mar 31"
+    items:
+      - tag: "Illustrations"
+        text: "[Pauline Beynes](https://en.wikipedia.org/wiki/Pauline_Baynes): the Wikipedia page of my great-grandmother, and an article on [how she met C.S. Lewis](https://www.narniaweb.com/2022/06/how-c-s-lewis-met-narnia-illustrator-pauline-baynes/). I have to admit that her work was pretty good."
+        sub:
+          - text: "When I was a child, she gave me and my cousins an original, signed version of the[Map of middle-earth,](https://share.google/8mA0OVJyPmj9XFVvW) from the Lord of the Rings (kind of like the one in the photo but not quite). I guess that’s pretty cool."

@@ -1,0 +1,124 @@
+---
+import Base from "../layouts/Base.astro";
+import { profile, experience, research, education, skills, credentials, languages, type Role } from "../data/site";
+
+const groups: { id: string; title: string; items: Role[] }[] = [
+  { id: "experience", title: "Experience", items: experience },
+  { id: "research", title: "Research", items: research },
+  { id: "education", title: "Education", items: education },
+];
+---
+
+<Base title="Work" fluid="subtle" description="Rebecca Ceccatelli — computer engineer: data engineering, distributed systems and machine-learning research. Experience, research and education.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Professional</p>
+      <h1 class="h1" data-reveal style="--d:80ms">Computer engineer,<br /><span class="ital">data &amp; systems</span></h1>
+      <p class="lede" data-reveal style="--d:160ms">
+        MSc Computer Science at ETH Zürich, thesis research at the MIT Media Lab, and a quant developer at Swiss Life.
+        I like problems where careful engineering meets a bit of mathematics — data pipelines, distributed storage, and generative models.
+      </p>
+      <div class="btns" data-reveal style="--d:240ms; margin-top:28px">
+        {profile.cvPdf && <a class="btn" href={profile.cvPdf} download>Download CV <span class="arr">↓</span></a>}
+        <a class={profile.cvPdf ? "btn ghost" : "btn"} href={profile.links.linkedin} target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a class="btn ghost" href={profile.links.github} target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href={`mailto:${profile.email}`}>Email</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap cv">
+    <aside class="side">
+      <div class="card glass sticky">
+        <dl>
+          <div><dt>Now</dt><dd>Quant Developer, Swiss Life<br />MSc thesis, MIT Media Lab × ETH</dd></div>
+          <div><dt>Based in</dt><dd>{profile.location}</dd></div>
+          <div><dt>Languages</dt><dd>{languages.map((l) => <>{l}<br /></>)}</dd></div>
+        </dl>
+        <nav class="toc" aria-label="On this page">
+          {groups.map((g) => <a href={`#${g.id}`}>{g.title}</a>)}
+          <a href="#skills">Skills</a>
+          <a href="#credentials">Certifications</a>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="body">
+      {groups.map((g) => (
+        <section id={g.id} class="block">
+          <h2 class="block-title" data-reveal>{g.title}</h2>
+          <ol class="timeline">
+            {g.items.map((r) => (
+              <li class="entry" data-reveal>
+                <p class="when small muted num">{r.when}</p>
+                <div>
+                  <h3 class="h3">{r.org}{r.place && <span class="place muted"> · {r.place}</span>}</h3>
+                  <p class="role">{r.role}</p>
+                  <p class="text">{r.text}</p>
+                  {r.tags && <div class="chips" style="margin-top:12px">{r.tags.map((t) => <span class="chip">{t}</span>)}</div>}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
+
+      <section id="skills" class="block">
+        <h2 class="block-title" data-reveal>Skills</h2>
+        <div class="skills">
+          {skills.map((s) => (
+            <div class="entry" data-reveal>
+              <p class="when small muted">{s.group}</p>
+              <div class="chips">{s.items.map((i) => <span class="chip">{i}</span>)}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="credentials" class="block">
+        <h2 class="block-title" data-reveal>Certifications &amp; tests</h2>
+        <table class="creds" data-reveal>
+          <tbody>
+            {credentials.map((c) => (
+              <tr><th scope="row">{c.what}</th><td class="muted">{c.detail}</td><td class="muted num">{c.when}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .cv { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); align-items: start; padding-bottom: 40px; }
+  .sticky { position: sticky; top: 96px; padding: 24px; }
+  dl { margin: 0; display: grid; gap: 18px; }
+  dt { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  dd { margin: 0; font-size: 0.92rem; color: var(--ink-2); line-height: 1.5; }
+  .toc { display: grid; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+  .toc a { text-decoration: none; font-size: 0.9rem; color: var(--ink-2); padding: 5px 0; transition: color 0.3s, transform 0.4s var(--ease); }
+  .toc a:hover { color: var(--ink); transform: translateX(4px); }
+
+  .block { padding-bottom: clamp(48px, 7vw, 80px); scroll-margin-top: 96px; }
+  .block-title { font-family: var(--serif); font-size: clamp(1.9rem, 3.4vw, 2.5rem); padding-bottom: 18px; border-bottom: 1px solid var(--ink); margin-bottom: 8px; }
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .entry { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+  .when { padding-top: 3px; }
+  .place { font-weight: 400; }
+  .role { font-size: 0.92rem; color: var(--accent); font-weight: 500; margin: 4px 0 10px; }
+  .text { color: var(--ink-2); font-size: 0.97rem; max-width: 62ch; }
+
+  .creds { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .creds th { text-align: left; font-weight: 500; }
+  .creds th, .creds td { padding: 14px 12px 14px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .creds td:last-child { text-align: right; padding-right: 0; }
+
+  @media (max-width: 860px) {
+    .cv { grid-template-columns: 1fr; }
+    .sticky { position: static; }
+    .toc { display: none; }
+  }
+  @media (max-width: 560px) {
+    .entry { grid-template-columns: 1fr; gap: 6px; }
+  }
+</style>

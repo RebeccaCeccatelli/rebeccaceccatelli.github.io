@@ -1,0 +1,80 @@
+---
+import Base from "../layouts/Base.astro";
+import YouTube from "../components/YouTube.astro";
+import { profile, recital, musicTimeline } from "../data/site";
+
+const [feature, ...rest] = recital.videos;
+---
+
+<Base title="Music" fluid="full" description="Rebecca Ceccatelli, pianist — Master's in Classical Piano Performance, Florence. Recordings from the graduation recital.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Music</p>
+      <h1 class="h1" data-reveal style="--d:80ms">Twenty years<br /><span class="ital iris-text">at the keyboard</span></h1>
+      <p class="lede" data-reveal style="--d:160ms">
+        I started performing at seven and graduated from the “Luigi Cherubini” Conservatory of Florence with a Master’s in Classical Piano
+        Performance, summa cum laude, at eighteen. Solo recitals, chamber music, Poulenc’s concerto — and now, a thesis teaching
+        machines to write music.
+      </p>
+      <div class="btns" data-reveal style="--d:240ms; margin-top:28px">
+        <a class="btn" href={profile.links.youtube} target="_blank" rel="noopener">YouTube channel <span class="arr">→</span></a>
+        <a class="btn ghost" href="/tonic/">Music × AI: Tonic</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="feature" data-reveal>
+        <YouTube id={feature.id} title={`${feature.composer} — ${feature.piece}`} large />
+        <div class="feature-text">
+          <p class="eyebrow">{recital.title} · {recital.where}</p>
+          <h2 class="h2" style="margin:14px 0 6px">{feature.piece}</h2>
+          <p class="muted">{feature.composer}</p>
+          <a class="link-arrow" style="margin-top:22px" href={recital.playlist} target="_blank" rel="noopener">Full recital on YouTube <span>→</span></a>
+        </div>
+      </div>
+
+      <ol class="grid">
+        {rest.map((v, i) => (
+          <li data-reveal style={`--d:${(i % 3) * 80}ms`}>
+            <YouTube id={v.id} title={`${v.composer} — ${v.piece}`} />
+            <p class="cap"><span class="h3">{v.piece}</span><span class="muted small">{v.composer}</span></p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>A short score</p>
+      <ol class="score">
+        {musicTimeline.map((t, i) => (
+          <li data-reveal style={`--d:${i * 80}ms`}>
+            <span class="yr num">{t.when}</span>
+            <span class="staff" aria-hidden="true"></span>
+            <p>{t.text}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .feature { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: end; margin-bottom: clamp(40px, 6vw, 72px); }
+  .feature-text { padding-bottom: 8px; }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 36px 20px; }
+  .cap { display: grid; gap: 2px; margin-top: 14px; }
+
+  .score { list-style: none; margin: 36px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 32px 24px; }
+  .score li { display: grid; gap: 14px; }
+  .yr { font-family: var(--serif); font-size: 2.6rem; line-height: 1; }
+  /* five-line staff motif */
+  .staff { height: 17px; background: repeating-linear-gradient(to bottom, var(--line-2) 0 1px, transparent 1px 4px); position: relative; }
+  .staff::after { content: ""; position: absolute; left: 0; top: 4px; width: 9px; height: 7px; border-radius: 50%; background: var(--ink); transform: rotate(-20deg); }
+  .score p { color: var(--ink-2); font-size: 0.97rem; }
+
+  @media (max-width: 860px) { .feature { grid-template-columns: 1fr; } }
+</style>

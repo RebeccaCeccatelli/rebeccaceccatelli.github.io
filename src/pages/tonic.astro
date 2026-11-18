@@ -1,0 +1,140 @@
+---
+import Base from "../layouts/Base.astro";
+import { tonic } from "../data/site";
+---
+
+<Base title="Tonic — Master's thesis" fluid="soft" description={`Tonic: ${tonic.subtitle}. ${tonic.where}.`}>
+  <header class="page-head">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow" data-reveal>{tonic.where}</p>
+        <h1 class="display" data-reveal style="--d:80ms; margin:18px 0 22px"><span class="ital iris-text">{tonic.title}</span></h1>
+        <p class="sub" data-reveal style="--d:160ms">{tonic.subtitle}</p>
+        <div class="btns" data-reveal style="--d:240ms; margin-top:30px">
+          <a class="btn" href={tonic.links[2].href} target="_blank" rel="noopener">Listen to the showcase <span class="arr">→</span></a>
+          <a class="btn ghost" href={tonic.links[5].href} target="_blank" rel="noopener">Read the thesis</a>
+        </div>
+      </div>
+
+      <!-- Energy landscape: a draft rolling downhill into a minimum -->
+      <figure class="energy card glass" data-reveal style="--d:200ms" aria-label="Diagram: a draft descends an energy landscape into a low-energy minimum">
+        <svg viewBox="0 0 400 260" role="img">
+          <defs>
+            <linearGradient id="eg" x1="0" x2="1">
+              <stop offset="0" stop-color="#9e85ff" /><stop offset=".55" stop-color="#f68fbd" /><stop offset="1" stop-color="#ffa982" />
+            </linearGradient>
+            <linearGradient id="ef" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#c9bcff" stop-opacity=".45" /><stop offset="1" stop-color="#c9bcff" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <path d="M10 40 C 70 40, 90 150, 150 170 S 220 120, 250 150 S 300 236, 330 232 S 380 170, 392 120 L392 260 L10 260 Z" fill="url(#ef)" />
+          <path id="land" d="M10 40 C 70 40, 90 150, 150 170 S 220 120, 250 150 S 300 236, 330 232 S 380 170, 392 120" fill="none" stroke="url(#eg)" stroke-width="2.5" stroke-linecap="round" />
+          <g class="ticks" stroke="currentColor" opacity=".18">
+            <line x1="10" y1="250" x2="392" y2="250" />
+          </g>
+          <circle class="ball" r="7" fill="#17161c">
+            <animateMotion dur="5s" repeatCount="indefinite" keyPoints="0;0.86;0.86" keyTimes="0;0.7;1" calcMode="spline" keySplines="0.5 0 0.3 1;0 0 1 1">
+              <mpath href="#land" />
+            </animateMotion>
+          </circle>
+          <text x="22" y="28" class="lbl">draft · high energy</text>
+          <text x="300" y="254" class="lbl">refined</text>
+        </svg>
+      </figure>
+    </div>
+  </header>
+
+  <section class="section-tight">
+    <div class="wrap narrow">
+      <p class="statement" data-reveal>{tonic.summary}</p>
+      <p class="small muted" data-reveal style="margin-top:22px">{tonic.people.map((p) => <>{p}<br /></>)}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>How it works</p>
+      <ol class="steps">
+        {tonic.steps.map((s, i) => (
+          <li class="card glass" data-reveal style={`--d:${i * 90}ms`}>
+            <span class="n num">{s.n}</span>
+            <h3 class="h2" style="font-size:2rem;margin:26px 0 10px">{s.title}</h3>
+            <p class="muted">{s.text}</p>
+          </li>
+        ))}
+      </ol>
+      <div class="stats" data-reveal>
+        {tonic.stats.map((s) => <div><span class="v num">{s.value}</span><span class="small muted">{s.label}</span></div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Explore the project</p>
+      <ul class="links">
+        {tonic.links.map((l, i) => (
+          <li data-reveal style={`--d:${(i % 4) * 60}ms`}>
+            <a class="card glass" href={l.href} target="_blank" rel="noopener">
+              <span class="h3">{l.label}</span>
+              <span class="small muted">{l.note}{l.alt && <span class="alt" data-href={l.alt.href}>{l.alt.label}</span>}</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <h2 class="h2" data-reveal style="margin:clamp(56px,8vw,96px) 0 18px">Code</h2>
+      <ul class="repos">
+        {tonic.repos.map((r) => (
+          <li data-reveal>
+            <a href={r.href} target="_blank" rel="noopener">
+              <code>RebeccaCeccatelli/<strong>{r.label}</strong></code>
+              <span class="muted small">{r.note}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<script>
+  // the Italian survey link sits inside the English card: make it its own link
+  document.addEventListener("astro:page-load", () => {
+    document.querySelectorAll<HTMLElement>(".alt[data-href]").forEach((el) => {
+      el.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); window.open(el.dataset.href, "_blank", "noopener"); });
+    });
+  });
+</script>
+
+<style>
+  .hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .sub { font-family: var(--serif); font-size: clamp(1.35rem, 2.4vw, 1.9rem); line-height: 1.2; color: var(--ink-2); max-width: 24em; }
+  .energy { margin: 0; padding: 18px; }
+  .energy svg { width: 100%; height: auto; color: var(--ink); overflow: visible; }
+  .lbl { font: 500 11px var(--sans); fill: var(--muted); letter-spacing: 0.04em; }
+
+  .statement { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.25; letter-spacing: -0.005em; }
+
+  .steps { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
+  .steps .n { font-size: 0.8rem; color: var(--muted); }
+  .stats { display: flex; flex-wrap: wrap; gap: 24px 64px; margin-top: clamp(48px, 7vw, 80px); padding-top: 28px; border-top: 1px solid var(--line); }
+  .stats div { display: grid; gap: 4px; }
+  .v { font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 3.8rem); line-height: 1; }
+
+  .links { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 14px; }
+  .links a { position: relative; display: grid; gap: 6px; height: 100%; padding-right: 48px; }
+  .links .arrow { position: absolute; top: 22px; right: 22px; transition: transform 0.5s var(--ease); }
+  .links a:hover .arrow { transform: translate(3px, -3px); }
+  .alt { text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .alt:hover { color: var(--ink); }
+
+  .repos { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .repos a { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding: 18px 4px; border-bottom: 1px solid var(--line); text-decoration: none; transition: padding 0.5s var(--ease); }
+  .repos a:hover { padding-left: 12px; }
+  code { font: 0.92rem ui-monospace, "SF Mono", Menlo, monospace; color: var(--ink-2); }
+  code strong { color: var(--ink); font-weight: 600; }
+
+  @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,95 @@
+# Thoughts & Cues — 2026-04. Edit freely; text is Markdown.
+month: "2026-04"
+days:
+  - date: 2026-04-01
+    label: "Apr 1"
+    items:
+      - tag: "Art"
+        text: "[Interesting anecdotes](https://www.bbc.co.uk/pressoffice/pressreleases/stories/2004/02_february/05/divine_michelangelo_top10.shtml) on Michelangelo’s life (including the one about bad hygiene). I could have imagined that, but I didn’t know he died incredibly rich."
+      - tag: "Poetry"
+        text: "During my first years in conservatory, before he retired, I was taught by a piano professor who, to me, has been not only a teacher, but literally shaped my taste for arts and beauty. He was (still is) very knowledgeable and used to tell me about a vast range of things. This is how I got to learn that Michelangelo, in his lifetime, has been not only a fine painter and sculptor, but also a poet. He was a prolific writer of [Sonnets and Madrigals](https://www.gutenberg.org/files/73109/73109-h/73109-h.htm), some of which I’ve read and are truly worth going through. They’re almost 500 years old now, but the Italian he used is still quite understandable, and they’re surprisingly communicative and direct."
+        sub:
+          - text: "I really like No. 47 of this collection (the one starting with “*How came to pass that I am mine no more?” in English).*"
+      - tag: "Poetry"
+        text: "Michelangelo’s poems made me think of a very famous, at least at the time, poem from the Italian Renaissance: [Triumph of Bacchus, from Lorenzo il Magnifico](https://www.babelmatrix.org/works/it/Medici%2C_Lorenzo_de_-1449/Trionfo_di_Bacco_e_Arianna/en/32580-A_song_for_Bacchus) (he was the ruler of the Florentine Republic at its peak). In Italian it has a great rhythm."
+      - tag: "Cinema"
+        text: "I was watching the video of the [“Monte Carlo” song from Pépite](https://youtu.be/U7S2o2SCt9E?si=tIJy5Ph-HkehYVjr) (great song, good video, by the way), and at the beginning there is a plastic bag lifted by the wind. It made me think of this scene in one of my favorite movies, American Beauty: [Plastic Bag Scene](https://youtu.be/Qssvnjj5Moo?si=L__R1tnPMr1ga2nF)."
+        sub:
+          - text: "Personal opinion: it’s such a shame that at the end of the scene they end up kissing. The scene is about so much more than that, and I’ve always found it kind of underwhelming that they had to “reduce” everything to something sexual."
+      - tag: "Music"
+        text: "[Iranian Jazz](https://www.youtube.com/watch?v=aaKrmYwaOkk&list=RDaaKrmYwaOkk&start_radio=1): enchanting, I had never listened to it before!"
+      - tag: "Politics"
+        text: "[Paula White-Cain](https://en.wikipedia.org/wiki/Paula_White-Cain): [Strike video](https://youtu.be/GdfYc5B0geQ?si=tUUmdV0TGa8pDS6W), [Pastors Lay Hands on Trump During Oval Office Prayer](https://youtu.be/Qoelt_c5KYw?si=3XP0bBJ4c5DYziG8)… WHAT.THE.ACTUAL.FUCK."
+      - tag: "Politics"
+        text: "What the actual fuck Pt. 2: I was watching a video on Youtube and found out about this Israelis sect or whatever [comparing Trump to Cyrus the Great](https://theconversation.com/israelis-are-hailing-trump-as-cyrus-returned-but-who-was-cyrus-the-great-anyway-267312)…"
+      - tag: "Policy"
+        text: "[The AI Policy Podcast](https://www.youtube.com/playlist?list=PLnArnDQHeUqeErR8mbkEGUqzGD2b5O3Cc)[Gregory C. Allen](https://www.csis.org/people/gregory-c-allen) works as a Senior Adviser at the [CSIS](https://www.csis.org/) (think tank based in Washington DC, particularly relevant in foreign policy)."
+      - tag: "Education"
+        text: "I looked up a few interesting Tech Policy programs at top universities. Most of them are funded, if accepted:"
+        sub:
+          - text: "[MIT Technology and Policy Program](https://tpp.mit.edu/academics/admissions-faq/)"
+          - text: "[Harvard Master in Public Policy](https://www.hks.harvard.edu/educational-programs/masters-programs/master-public-policy#)"
+          - text: "[ETH Master in Science, Technology and Policy](https://istp.ethz.ch/education/MSc-ETH-STP.html)"
+          - text: "[Stanford INPOL](https://bulletin.stanford.edu/programs/INPOL-MA)"
+          - text: "[Yale's Master in Public Policy in Global Affairs](https://jackson.yale.edu/academics/mpp/)"
+  - date: 2026-04-04
+    label: "Apr 4"
+    items:
+      - tag: "Sculpture"
+        text: "[Apennine Colossus](https://en.wikipedia.org/wiki/Apennine_Colossus): giant stone statue erected in Tuscany to represent a personification of the Apennine Mountains. It is so expressive."
+      - tag: "Literature"
+        text: "[De L'amour (Stendhal)](https://en.wikipedia.org/wiki/De_l%27amour_(Stendhal)): a dear friend, during one of our chats, mentioned this treatise on love as a psychological phenomenon. I’ve never read, but maybe it could be worth it."
+        sub:
+          - text: "Other source on the text: [Project Gutenberg](https://www.gutenberg.org/ebooks/60882)"
+      - tag: "History"
+        text: "[Carbonari](https://en.wikipedia.org/wiki/Carbonari): informal network of secret revolutionary societies active in Italy from about 1800 to 1831. Interesting to read about. The reason why I came across this Wikipedia page is because Stendhal wrote his text on love to go through a rejection from Matilde Viscontini, a member of the Carbonari."
+      - tag: "Websites"
+        text: "I’ve always had a thing for nicely designed, artistic websites. These guys at [Lusion Labs](https://labs.lusion.co/) do a pretty good job. [Akari](https://akari.lusion.co/#mayhem), in particular, is an experiment on light and it’s quite visually pleasing."
+      - tag: "Websites"
+        text: "[Une mini aventure](https://uneminiaventure.webflow.io/?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-CMS-US&utm_term=kwd-3500001_cms+web+design_e_635102998793__#chap-01): another nice storytelling website."
+      - tag: "Websites"
+        text: "[Collection of interactive websites at Webflow](https://webflow.com/blog/interactive-website?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-CMS-US&utm_term=kwd-3500001_cms%20web%20design_e_635102998793__&gad_source=1&gad_campaignid=18107009909&gbraid=0AAAAADsEFNOS8WX3R3p9GHGApmeKChX_0&gclid=Cj0KCQjw7cLOBhDmARIsAGsuA0lwl6jPu5trnOZpHzQi8UjLG0ULtWUptY1qsuQq1dTsC5lO910-JN0aAvmDEALw_wcB)"
+      - tag: "Websites"
+        text: "[Site of the day collection, from Awwwards](https://www.awwwards.com/websites/sites_of_the_day/)"
+      - tag: "Cinema"
+        text: "I finally watched [In the Mood for Love](https://en.wikipedia.org/wiki/In_the_Mood_for_Love). Although I did not fall in love with it, it’s definitely an interesting watch and has very different timings and cuts compared to what we’re used to in Western Cinematography. Brief mention of the two things I liked the most: Mrs. Chan’s exquisitely classy dresses (I love the high-neck Chinese style of the time), and the scene where Mr. Chow goes whispering his secret to the Buddhist temple."
+        sub:
+          - text: "[Wong Kar-Wai](https://en.wikipedia.org/wiki/Wong_Kar-wai): director of the movie, which is part of a trilogy."
+      - tag: "Pop Culture"
+        text: "[Wuxia](https://en.wikipedia.org/wiki/Wuxia): a genre of Chinese function. This is the genre the two lovers are writing for in “In the Mood for Love”."
+      - tag: "Fashion"
+        text: "[The evolution of Chinese Garments from the Qing Dynasty to the 1950s Hong Kong](https://standtalld.com/blogs/news/the-evolution-of-chinese-garments-from-the-qing-dynasty-to-the-1950s-hong-kong-cheongsam?srsltid=AfmBOopS7PcRn_3VmvDZ2oAsYDqaFZpH7nkKHxLz8bMw1OLhzk_mKWwm): the type of dress I was mentioning above has a specific name and a long tradition in Chinese history: [cheongsam](https://www.google.com/search?q=cheongsam+hong+kong+50s&sca_esv=8b8e1d908a60a98a&rlz=1C5CHFA_enIT1065IT1065&udm=2&biw=1440&bih=781&sxsrf=ANbL-n5viHSGy4V3owlD4L3qXkDDj9OpvQ%3A1775361905415&ei=cd_Rab6AGbff5NoPvZvUyA4&ved=0ahUKEwj-_OC96tWTAxW3L1kFHb0NFekQ4dUDCBI&uact=5&oq=cheongsam+hong+kong+50s&gs_lp=Egtnd3Mtd2l6LWltZyIXY2hlb25nc2FtIGhvbmcga29uZyA1MHNIjiNQugNY3yJwA3gAkAEAmAGCAaAB6gaqAQQxMy4yuAEDyAEA-AEBmAINoAKDBsICDRAAGIAEGIoFGEMYsQPCAgYQABgHGB7CAggQABiABBixA8ICChAAGIAEGIoFGEPCAgUQABiABMICBBAAGB7CAgYQABgFGB6YAwCIBgGSBwQxMS4yoAfBP7IHAzkuMrgH9wXCBwYwLjIuMTHIBzmACAE&sclient=gws-wiz-img)."
+      - tag: "Poetry"
+        text: "This poem, that I used to read a lot when I was a teenager, came to my mind: [Les enfants qui s'aiment](https://www.artpoetique.fr/poemes/les_enfants_qui_s_aiment.php) (Prevert). There are many translations online, but I’m adding here the French, original version, because I’ve read it so many times that I basically know the translation by heart at this point, and in French it just sounds… more delicate."
+      - tag: "Poetry"
+        text: "[Ungaretti](https://en.wikipedia.org/wiki/Giuseppe_Ungaretti)is my favorite poet, and this is probably my favorite poem: [I fiumi (The Rivers)](https://paralleltexts.blog/2026/02/01/giuseppe-ungaretti-i-fiumi-the-rivers/). He talks about the phases of his life. I’m not sure it translates well in English, but the lexicon and sounds he uses in Italian are magistral."
+      - tag: "Cinema"
+        text: "Every now and then I rewatch this scene from Up: [best intro ever](https://youtu.be/XO77YuyMOek?si=nSGyN7EwGMuWBkex)."
+  - date: 2026-04-10
+    label: "Apr 10"
+    items:
+      - tag: "Literature"
+        text: "[Pierre Bourdieu](https://en.wikipedia.org/wiki/Pierre_Bourdieu#:~:text=Bourdieu's%20anthropological%20work%20was%20dominated,of%20how%20social%20agents%20operate.)"
+      - tag: "Pop Culture"
+        text: "[Dot-com Bubble](https://en.wikipedia.org/wiki/Dot-com_bubble)"
+      - tag: "Education"
+        text: "[Overton Window](https://en.wikipedia.org/wiki/Overton_window)"
+      - tag: "Education"
+        text: "[Degrowth](https://degrowth.info/degrowth)"
+  - date: 2026-04-13
+    label: "Apr 13"
+    items:
+      - tag: "Education"
+        text: "[15-minute city](https://en.wikipedia.org/wiki/15-minute_city)"
+  - date: 2026-04-14
+    label: "Apr 14"
+    items:
+      - tag: "Photography"
+        text: "[Francesca Woodman](https://www.google.com/search?sca_esv=5007095e94022ac2&rlz=1C5CHFA_enIT1065IT1065&sxsrf=ANbL-n7ioETjNUTlsHyeZgzbxpuBqJPnmg:1776183131716&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6UIUc6UR6SuJFZzmDZDaBCXj3NZJ_DMK_QqUo9V0Ifj9IbhxoNLUNajvpcn0vNmNjR5N6GkMFsM25AFm-Rbht--GOKv01yfbVGGC3oFYWVHORzp1y2Y8rDFM7z1NL6TUpliCmBxA87lC9Txwuz8UhmLngy8Q&q=francesca+woodman&sa=X&ved=2ahUKEwjNzfzk3e2TAxUdAHkGHY31EzsQtKgLegQIEBAB&biw=1420&bih=658&dpr=2) (link to her[Wikipedia page](https://en.wikipedia.org/wiki/Francesca_Woodman)). Very nice [article from BBC](https://www.bbc.com/culture/article/20211209-francesca-woodman-the-eerie-images-of-a-teenage-genius), see also [House #3 from \"The House\" series](https://www.artic.edu/artworks/275510/house-3-from-the-house-series) and [On Being an Angel](https://share.google/fhY2j7TzOc4uMdkdp)"
+      - tag: "Music"
+        text: "[Dance of the Persian Slaves, Musorgsky](https://www.youtube.com/watch?v=9JH8kyHIwxM)"
+  - date: 2026-04-21
+    label: "Apr 21"
+    items:
+      - tag: "Miscellaneous"
+        text: "[The Marginalian](https://www.themarginalian.org/): newsletter on a variety of artistic topics."

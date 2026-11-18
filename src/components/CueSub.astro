@@ -1,0 +1,14 @@
+---
+import { md, type CueItem } from "../lib/cues";
+interface Props { items: CueItem[] }
+const { items } = Astro.props;
+---
+
+<ul>
+  {items.map((s) => (
+    <li>
+      <span set:html={md(s.text)} />
+      {s.sub?.length ? <Astro.self items={s.sub} /> : null}
+    </li>
+  ))}
+</ul>

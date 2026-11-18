@@ -1,0 +1,94 @@
+---
+import { ClientRouter } from "astro:transitions";
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import { profile } from "../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** How strongly the liquid background reacts on this page. */
+  fluid?: "full" | "soft" | "subtle";
+}
+const { title, description = profile.intro, fluid = "soft" } = Astro.props;
+const fullTitle = title ? `${title} — ${profile.name}` : `${profile.name} — ${profile.tagline}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en" data-fluid={fluid}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+    />
+    <script is:inline>document.documentElement.classList.add("js");</script>
+    <ClientRouter />
+  </head>
+  <body>
+    <canvas id="fluid" transition:persist="fluid" aria-hidden="true"></canvas>
+    <div class="paper-fallback" aria-hidden="true"></div>
+    <Nav />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+
+    <style is:global>
+      #fluid { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; display: block; }
+      /* Static iridescent wash when WebGL / motion is unavailable */
+      .paper-fallback {
+        position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0; transition: opacity 1s;
+        background:
+          radial-gradient(40vw 30vw at 80% 10%, rgba(201, 188, 255, 0.45), transparent 70%),
+          radial-gradient(36vw 28vw at 10% 70%, rgba(255, 210, 188, 0.4), transparent 70%),
+          radial-gradient(30vw 24vw at 60% 95%, rgba(174, 232, 228, 0.4), transparent 70%);
+      }
+      html.no-fluid .paper-fallback { opacity: 1; }
+      html.no-fluid #fluid { display: none; }
+    </style>
+
+    <script>
+      import { startFluid, type FluidMode } from "../scripts/fluid";
+
+      type Fluid = ReturnType<typeof startFluid>;
+      const w = window as unknown as { __fluid?: Fluid; __fluidTried?: boolean };
+      const mode = () => (document.documentElement.dataset.fluid as FluidMode) || "soft";
+
+      function boot() {
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!w.__fluidTried) {
+          w.__fluidTried = true;
+          const canvas = document.getElementById("fluid") as HTMLCanvasElement | null;
+          w.__fluid = !reduce && canvas ? startFluid(canvas, mode()) : null;
+        }
+        document.documentElement.classList.toggle("no-fluid", !w.__fluid);
+        w.__fluid?.setMode(mode());
+
+        // reveal on scroll
+        const els = document.querySelectorAll<HTMLElement>("[data-reveal]:not(.in)");
+        const io = new IntersectionObserver(
+          (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }),
+          { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
+        );
+        els.forEach((el) => io.observe(el));
+      }
+      document.addEventListener("astro:page-load", boot);
+      document.addEventListener("astro:after-swap", () => document.documentElement.classList.add("js"));
+    </script>
+  </body>
+</html>

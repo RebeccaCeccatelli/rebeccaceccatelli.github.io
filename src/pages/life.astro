@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import Base from "../layouts/Base.astro";
+import { passions, anecdotes } from "../data/site";
+
+// Drop photos into src/assets/photos/. The file name becomes the caption:
+// "2024-07-saarbrucken-summer-school.jpg" → "saarbrucken summer school" (leading date is used for ordering).
+const files = import.meta.glob<{ default: ImageMetadata }>("../assets/photos/*.{jpg,jpeg,png,webp,avif}", { eager: true });
+const photos = Object.entries(files)
+  .sort(([a], [b]) => b.localeCompare(a))
+  .map(([path, mod]) => {
+    const name = path.split("/").pop()!.replace(/\.\w+$/, "");
+    const caption = name.replace(/^\d{4}(-\d{2})?(-\d{2})?-?/, "").replace(/[-_]+/g, " ");
+    return { src: mod.default, caption };
+  });
+const showPlaceholder = photos.length === 0 && import.meta.env.DEV;
+---
+
+<Base title="Life" fluid="full" description="Rebecca Ceccatelli — passions, small stories and photos with friends.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Life</p>
+      <h1 class="h1" data-reveal style="--d:80ms">Poetry, running shoes<br /><span class="ital iris-text">&amp; good company</span></h1>
+      <p class="lede" data-reveal style="--d:160ms">
+        I’m a sunny, energetic person who loves being around stimulating people. Here is the part of me that doesn’t fit on a CV.
+      </p>
+    </div>
+  </header>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <ul class="passions">
+        {passions.map((p, i) => (
+          <li class="card glass" data-reveal style={`--d:${(i % 4) * 70}ms`}>
+            <span class="glyph" aria-hidden="true">{p.glyph}</span>
+            <h2 class="h3">{p.title}</h2>
+            <p class="muted small">{p.text}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap narrow">
+      <p class="eyebrow" data-reveal>Small stories</p>
+      <div class="stories">
+        {anecdotes.map((a, i) => (
+          <article data-reveal style={`--d:${i * 80}ms`}>
+            <h2 class="h2" style="font-size:clamp(1.6rem,3vw,2.2rem)">{a.title}</h2>
+            <p class="lede" style="margin-top:12px">{a.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {(photos.length > 0 || showPlaceholder) && (
+    <section class="section-tight">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>With friends</p>
+        {photos.length > 0 ? (
+          <div class="gallery">
+            {photos.map((p, i) => (
+              <figure data-reveal style={`--d:${(i % 3) * 70}ms`}>
+                <Image src={p.src} alt={p.caption} widths={[480, 800, 1200]} sizes="(max-width: 700px) 100vw, 33vw" />
+                <figcaption class="small muted">{p.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : (
+          <div class="gallery placeholder">
+            {Array.from({ length: 6 }).map(() => <div class="ph" />)}
+            <p class="small muted note">Only visible in dev: add photos to <code>src/assets/photos/</code> and they appear here.</p>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .passions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 14px; }
+  .passions li { display: grid; gap: 8px; align-content: start; }
+  .glyph {
+    width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; margin-bottom: 14px;
+    background: var(--iris); font-size: 1.2rem; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+  .stories { display: grid; gap: clamp(36px, 5vw, 56px); margin-top: 28px; }
+  .stories article { padding-left: 24px; border-left: 1px solid var(--line-2); }
+
+  .gallery { columns: 3 280px; column-gap: 16px; margin-top: 28px; }
+  .gallery figure { break-inside: avoid; margin: 0 0 16px; }
+  .gallery img { width: 100%; height: auto; border-radius: var(--r); box-shadow: var(--shadow); }
+  figcaption { margin-top: 8px; text-transform: capitalize; }
+  .placeholder { position: relative; }
+  .ph { height: 220px; margin-bottom: 16px; border-radius: var(--r); background: var(--iris); opacity: 0.35; break-inside: avoid; }
+  .ph:nth-child(2n) { height: 300px; }
+  .note { column-span: all; }
+</style>

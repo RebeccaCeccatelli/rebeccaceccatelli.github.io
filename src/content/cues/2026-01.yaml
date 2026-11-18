@@ -1,0 +1,278 @@
+# Thoughts & Cues — 2026-01. Edit freely; text is Markdown.
+month: "2026-01"
+days:
+  - date: 2026-01-05
+    label: "Jan 5"
+    items:
+      - tag: "Philosophy"
+        text: "I reflected on the concept of “morality” for Kant and had this famous quote of his from *the Critique of Practical Reason* in mind: *“Two things fill the mind with ever new and increasing admiration and awe, the more often and steadily we reflect upon them: the starry heavens above me and the moral law within me. I do not seek or conjecture either of them as if they were veiled obscurities or extravagances beyond the horizon of my vision; I see them before me and connect them immediately with the consciousness of my existence.”*"
+      - tag: "Cinema"
+        text: "I watched *Cars I*. I had forgotten what a nice movie it is! It’s very American and has a great soundtrack, in particular the songs I’m listing below, and the endless lands on the **Route 66** gave me a sense of peace and commotion. I cried a little when Lightning MacQueen stopped at the arrival and went back to help “The Legend” finish his last race. I then looked up various itineraries on Route 66: apparently, it can be done in a couple of weeks, maybe I’ll rent a fast car and will drive down that road one day. Slowly though, to savor the beauty of those places and let the “Americanness” sink in."
+        sub:
+          - text: "Songs: [Find Yourself](https://open.spotify.com/track/3OCS075lQnGG3gOUI0bava?si=7c3f6b43d5ed42cd), [Our Town](https://open.spotify.com/track/72V7HVj71eNXogp7y4gfVw?si=2ed08fdd2fd04383), [Life is a Highway (original version)](https://open.spotify.com/track/0hKF8N8aflF1uDzEEnPr2j?si=14919d3ae93145d6)."
+          - text: "**“Life is a Highway”** is a great song that reminds me also of a [very sweet scene](https://youtu.be/lfMeO122IWw?si=ayfw3QlxIQro7KWQ) in “The Office”: Michael is driving Holly to the new town where she’ll be living. At the end of the drive, they realize they cannot be with each other under those circumstances and they break up."
+  - date: 2026-01-06
+    label: "Jan 6"
+    items:
+      - tag: "Geopolitics"
+        text: "I’ve watched a couple of videos on the current situation in Venezuela. One of these mentioned the **Monroe Doctrine**, which I knew nothing about. I’m linking here the Wikipedia page: [Monroe Doctrine](https://en.wikipedia.org/wiki/Monroe_Doctrine). I also learned about President Monroe and realized he was the predecessor of John Quincy Adams."
+      - tag: "Music"
+        text: "[Shostakovich's Preludes and Fugues](https://youtu.be/jQS2_DZ9Ll0?si=fx6re8eFWQHDe-0X) are a masterpiece of the 20th century. Inspired by the Well-Tempered Klavier from Bach, they are a modern, harmony-dense reinterpretation of the concept of a stunning beauty. I’m studying No. 24 (which I recommend listening to, starts at 20:24), but from this recording I listened to today I was particularly impressed by the evanescence of the fugue in A major (minute 11:22). [Trifonov](https://en.wikipedia.org/wiki/Daniil_Trifonov)’s interpretation is truly inspired."
+  - date: 2026-01-07
+    label: "Jan 7"
+    items:
+      - tag: "Geopolitics"
+        text: "I’ve watched a video on the history and consequences of the Iranian Revolution in 1979. One thing I found particularly interesting was the crucial role that Khomeini attributed to women: [\"Great women of the World\" speech](https://al-islam.org/position-women-viewpoint-imam-khomeini-ra/great-women-world). It was also interesting to learn how Khomeini was, before anything else, a great strategist who knew exactly what would have triggered the Iranian crowd: [The self-marketing dictator](https://www.nzz.ch/english/as-world-watches-iran-legacy-of-ayatollah-khomeini-continues-to-beguile-some-on-right-and-left-ld.1890294). At some point I stopped jumping across Wikipedia pages because I realized that, oh well, the US is going to review my search history and having a streak of pages linked to the Iranian regime doesn’t look great."
+      - tag: "Music"
+        text: "Total aside, but speaking of revolutions: [Tracy Chapman - Talking 'Bout a Revolution](https://open.spotify.com/track/0YMFcrMtBowDdD5bPz0cgy?si=2fb43a332734484e)"
+      - tag: "Music"
+        text: "Yesterday, Dalia made me discover this Ella Fitzgerald song. It brings me back in time, it’s a vibe: [Ella Fitzgerald - I'd rather go blind](https://open.spotify.com/track/1kPBT8S2wJFNAyBMnGVZgL?si=1d339ce315774486)"
+      - tag: "Debate"
+        text: "As I promised to myself, I started looking up on Youtube some content on debating. This is the very first video I came across (Bo Seo is a debate champion from Harvard): [How to Argue](https://youtu.be/2pVdSEp-tT8?si=UVKRxK2HAQbQm_hQ). I like the idea of “information diet”."
+      - tag: "Debate"
+        text: "This guy! [Alex Lee](https://www.youtube.com/live/wvxub4b9Agc)"
+  - date: 2026-01-08
+    label: "Jan 8"
+    items:
+      - tag: "Tech"
+        text: "Apparently Google is thinking of sending a “constellation” of datacenters to outer space to cope with the energy demand issues: [Project Suncatcher](https://research.google/blog/exploring-a-space-based-scalable-ai-infrastructure-system-design/)."
+      - tag: "Art"
+        text: "I was always fascinated by the story of Saul and David, and the fact that he played an instrument, and it always reminds me of the lyrics in Hallelujah. I really like this painting: [David and Saul](https://en.wikipedia.org/wiki/Saul#/media/File:David_and_Saul_(Julius_Kronberg)_-_Nationalmuseum_-_18384.tif)."
+      - tag: "Art"
+        text: "Ahhh I love Art Nouveau: [Winter Garden Room](https://www.reddit.com/r/ArtNouveau/comments/1ny7etz/winter_garden_room_with_stained_glass_windows_in/)"
+      - tag: "Comics"
+        text: "A cute comic from xkcd: [Coffee](https://xkcd.com/1743/)"
+  - date: 2026-01-09
+    label: "Jan 9"
+    items:
+      - tag: "Sports"
+        text: "The [Marathon des Sables](https://marathondessables.com/fr?gad_source=1&gad_campaignid=22932654901&gbraid=0AAAAADAmtV9oIx9PP2cdNv4-rq3EzOlct&gclid=CjwKCAiA64LLBhBhEiwA-Pxgu11o5c4WL69Txo6bTcFP2z8bTHB9CbDJFXb3tEzBWE444uFzgU2LqxoClrgQAvD_BwE) is an endurance footrace I read about. There’s something about it that attracts me to it… It’s on my bucket list, maybe one day. Also, [The 2025 Movie of the Event](https://youtu.be/Lriza40AIrc?si=ttRET-3mXTVuJdAL) is very well-made."
+  - date: 2026-01-11
+    label: "Jan 11"
+    items:
+      - tag: "Cinema"
+        text: "If you haven’t yet, please do watch the movie “Everything, everywhere, all at once”. I don’t think I’ve fully grasped everything of it, but that’s exactly the point. It’s fantastic (figuratively, and literally)."
+  - date: 2026-01-10
+    label: "Jan 10–14"
+    items:
+      - tag: "History"
+        text: "Some culture and writings from ancient India:"
+        sub:
+          - text: "[Mahabharata](https://en.wikipedia.org/wiki/Mahabharata)"
+          - text: "[Ashoka](https://en.wikipedia.org/wiki/Ashoka), apparently one of the greatest Indian emperors"
+          - text: "The concept of [Dharma](https://en.wikipedia.org/wiki/Dharma) in Indian religions"
+      - tag: "History"
+        text: "SUPER interesting historical figure of the 20th century I didn’t know anything about: [Israel Epstein](https://en.wikipedia.org/wiki/Israel_Epstein) (a Polish-born Chinese journalist, loyal to the Chinese communist party and one of the few foreigners who was given the honor to become a member of the party). I then started digging quite a lot into the birth of the Communist Party, it’s honestly so fascinating… But then again, similarly to Iran, I stopped because I don’t want to risk it with the US :)"
+        sub:
+          - text: "Look at [this](https://chineseposters.net/themes/founding-chinese-communist-party) article, though, it tells the story of the founding of the party through posters! Actually, the [whole website](https://chineseposters.net/) is quite cool."
+      - tag: "Architecture"
+        text: "[Al-Askari Shrine, Iraq](https://www.google.com/imgres?imgurl=https://preview.redd.it/iraqi-architecture-al-askari-shrine-samarra-v0-ex4wkj0tgo3e1.jpeg?auto%3Dwebp%26s%3Def7341983db7c7f4c0902c1f32440da6e30573f4&tbnid=PoYRCovU7HJJKM&vet=1&imgrefurl=https://www.reddit.com/r/ArchitecturalRevival/comments/1h214m2/iraqi_architecture_alaskari_shrine_samarra/&docid=8alDIFlfOgjQ3M&w=675&h=1200&source=sh/x/im/m1/2&kgs=1b39059b21b17567&shem=bdslc,isst,shrtsdl&utm_source=bdslc,isst,shrtsdl,sh/x/im/m1/2). I simply love this architecture."
+      - tag: "Art"
+        text: "Yesterday, I went to **Kunsthaus** again. The more I go there the more I find the collection to be top-notch and very well-organized. I really appreciate the attempt of displaying modern art that at the same time is still “visually beautiful”. A bunch of stuff I liked:"
+        sub:
+          - text: "[Marianne von Werefkin](https://en.wikipedia.org/wiki/Marianne_von_Werefkin): check out the works from this expressionist painter! I love the use of the colors! This one in particular: [Raptures of Love](https://share.google/h759zUZTjEEt7I9oF). And this is an interesting article on her: [The Russian modernist who made the European Avant-Garde feel at Home](https://apollo-magazine.com/marianne-werefkin-russian-modernist-painter/)"
+          - text: "[Augusto Giacometti](https://en.wikipedia.org/wiki/Augusto_Giacometti), a Swiss painter. I like his “scattered” technique"
+            sub:
+              - text: "I want to go visit this place in Zurich: [Fresken im Amtshaus I](https://www.stadt-zuerich.ch/de/stadtleben/kultur/kultur-leben/kunst-und-bau/werke/kreis-1/amtshaus-i.html)"
+              - text: "[Sketch after a glass window in Florence](https://www.artnet.com/artists/augusto-giacometti/sketch-after-a-glass-window-in-the-florence-dkmS0M_2Fu2DGIASugGFJQ2)"
+              - text: "This is exposed at the Kunsthaus: [Chromatische Fantasie](https://www.google.com/imgres?imgurl=https://digiart.ch/wp-content/uploads/2018/02/AG004-300x300.jpg&tbnid=ocL0vVTl8rTyLM&vet=1&imgrefurl=https://digiart.ch/produkt/ssi11665713/&docid=cX3b6MJsnV_0pM&w=300&h=300&source=sh/x/im/m1/2&kgs=0b4cdfb2bf04b911&shem=bdslc,isst,shrtsdl&utm_source=bdslc,isst,shrtsdl,sh/x/im/m1/2)"
+          - text: "There was a temporary exhibition of these two artists, and I quite enjoyed it:"
+            sub:
+              - text: "[Willhelm Lehmbruck](https://de.wikipedia.org/wiki/Wilhelm_Lehmbruck), a German sculptor (but he also painted). This is [an interesting sculpture](https://share.google/oX480YMLjSGqtLnYq), it’s very plastic and expressive. This is an article on the exhibition at Kunsthaus: [The weight of being](https://www.kunsthaus.ch/en/besuch-planen/ausstellungen/wilhelm-lehmbruck-yves-netzhammer/). It’s worth googling him, he did some interesting work."
+              - text: "[Yves Netzhammer](https://www.google.com/imgres?imgurl=https://www.bilanz.ch/sw/720/sites/default/files/media/field_image/2023-05/bil_0623_ka_14nstler_rating_yves_netzhammer_1.jpg&tbnid=gprpyCyPoYbnWM&vet=1&imgrefurl=https://www.bilanz.ch/bilanz/bildergalerie/yves-netzhammer-602234&docid=g_zmMKT2FADUOM&w=720&h=539&source=sh/x/im/m1/2&kgs=310974ccf9f6e46e&shem=bdslc,isst,shrtsdl&utm_source=bdslc,isst,shrtsdl,sh/x/im/m1/2), Swiss contemporary artist (still alive and active). He does these “sculptures” with mannequins and wires and plays with how they move in space… I’m not sure they’re objectively likeable, but they triggered me somehow."
+                sub:
+                  - text: "I just found out that [the horse on top of the horrible river-side building](https://share.google/7q6pG48mVOlTh6jwI) in Zurich is from this guy!"
+      - tag: "Information"
+        text: "Some of the history/geopolitics/architecture channels I’m watching on Youtube: [Epic History](https://www.youtube.com/@EpichistoryTv/playlists), [The History Guy](https://www.youtube.com/@TheHistoryGuyChannel),[City Beautiful (Cities in History),](https://www.youtube.com/playlist?list=PL7cWZJ9rFTx4BfrnriNVNS4ojsCACDm8A) [Timeline](https://www.youtube.com/@TimelineChannel/playlists). This one is actually my favorite, but unfortunately is in Italian: [Nova Lectio](https://www.youtube.com/@NovaLectio/playlists)"
+        sub:
+          - text: "Update: I found out there is an international version of Nova Lectio, reduced in content though: [Nova Lectio International](https://www.youtube.com/@novalectiointernational/videos)!"
+      - tag: "Politics"
+        text: "Take this just as a personal consideration, but this morning I was thinking about the depiction of politicians in the media today, and how disappointing it is to me. When I was a kid, my dad used to show me excerpts from the very first Italian political “talk show” called *Tribuna Elettorale.* Something like this: [Togliatti, 1960](https://www.youtube.com/watch?v=d1P-pY1B5E8). These are literally just people sitting in front of the camera and giving their speeches: it’s so simple and plain, boring, impersonal and… incredibly professional and dense in content. I cannot stand the sensationalism of modern politics, I know it’s not realistic, but I dream of a world where political debates can be held this way again, and the exchange doesn’t have to be leveled down just because the media assumes that the attention span of the public is too short to release this kind of content."
+        sub:
+          - text: "By the way,[Palmiro Togliatti](https://en.wikipedia.org/wiki/Palmiro_Togliatti) has played a huge role in Italian politics. It’s very difficult not to admire these communist politicians of the post-war period, they felt a strong sense of mission and really were men of honor and culture."
+  - date: 2026-01-15
+    label: "Jan 15"
+    items:
+      - tag: "Cinema"
+        text: "Moving scene from the movie “Everything everywhere all at once”: [rocks](https://www.youtube.com/watch?v=UXar2tNdG34) ;)"
+      - tag: "Politics"
+        text: "Interesting quote from Margaret Thatcher: [quote](https://www.goodreads.com/quotes/115241-europe-was-created-by-history-america-was-created-by-philosophy)."
+  - date: 2026-01-16
+    label: "Jan 16"
+    items:
+      - tag: "Politics"
+        text: "Yesterday I watched a video on the life and political ascent of Xi Jinping… My first thought whenever I see him is that “he’s got smart eyes”, the kind of look that goes through you and you know that lands somewhere else, in a place that can’t really be reached. I didn’t know that his dad was exiled during the Cultural Revolution, and he himself was forced to leave Beijing. There’s something very fascinating to me in a man patient and clever enough to wait for his moment, never repudiating the party and, only years later, getting his silent “revenge” by becoming the leader of the same party. Clearly we come from different worlds, but I cannot help but appreciate the discipline and intelligence this man has shown his whole life."
+        sub:
+          - text: "Also, since today there’s been a Canada-Chin deal, this famous video… [Chinese President Xi confronts Trudeau at the G-20](https://youtu.be/6n-AsrNEQSI?si=oOOyv8KBiYMBw-rX)"
+      - tag: "Philosophy"
+        text: "I really like t[his famous photo of all humanity captured in one shot](https://share.google/AgJJ8vdzW9I6c21Tq)from the moon. It gives me goosebumps every time."
+      - tag: "Literature"
+        text: "I finished reading “Journey to the East” from Herman Hesse. This passage stayed with me:"
+  - date: 2026-01-17
+    label: "Jan 17"
+    items:
+      - tag: "Art"
+        text: "My absolute favorite painting from Dalì, I’ve always been amazed by the bold point of view: [Christ of Saint John of the Cross](https://share.google/llrUIkeG5AAPIUPvG)"
+  - date: 2026-01-18
+    label: "Jan 18"
+    items:
+      - tag: "Photography"
+        text: "Look up this Chinese photographer’s works: [Ren Hang](https://share.google/ZDpzhRtfCSo8F9WIp), [another photo](https://www.google.com/search?client=ms-android-samsung-rvo1&hs=OSWU&sca_esv=18c82b472cdad13f&sxsrf=ANbL-n7Mi2EQm27W58M4z4FEypJ-rgHExA:1768768368390&udm=2&fbs=ADc_l-byipRaccqV0jmfPhi1DgzPtklXGmVkws8Z_lBff884vwWzYGOXmwhR8m6ZBpcqcPKigjKCXGzdgLA863i-FX-8p51QvHiCq_ARnd93JaOhd6-aL9_a2WH_XL-o0cIWgoVNujEg8_u4mWy2qR5X8R_16aA5O60EN2asvYqGADedQ2REd9Ancm4EAqOlqHflboPoXXG0g8Ssdru0L8_VXq5IyS4jRATLZEFYDahlYgz_Q78nn_Y&q=ren+hang&sa=X&ved=2ahUKEwjat6bS95WSAxXNzQIHHfCvE80QtKgLegQIEhAB&biw=360&bih=609&dpr=3&aic=0#sv=CAMS9gQa1gQKhgIKuQEStgEKd0FNbjMteVFOamtrSlhhay01ajVBMHVhem5mcGVFLTBmaGtkb09KY0dCbVdzQURpaEpNX3AxQ281Tnh1OXBTSnQtOXItaDhFUVdaUDBIWDRnRklOaHhtX1RWMElqQmd1Z0VXSFExQ24wSldObzl6NXRYR1lEeF9BEhdkME50YWVya0dZNnVpLWdQZzRTc3lBVRoiQUpLTEZtSm5jaS1vNzJoOVd4d1NGbkpBQ1BZZUdLMjFHURIDODQ5GgEzIg0KAXESCHJlbiBoYW5nIgcKA3RicxIAIigKBGVxbGQSIENnSUlBQkFBT2dRSUFCQUFWU2hiTno5Z0FXMmZLaUlfErgCCs8BEswBCowBQU1uMy15UTM1Z0hfcGc0TzlIb3lTekFBVEtCTU9jd1hJNjdnUGVNWksxdFk0Z1Izekt5M0NGeFFGLVZKdXEwVks1bXZVTjJvcGNwV1FkUFJSYUNtQnVTZVRKYUdQN25zT29pWXhlQVR3QWFET3B3dy05UmZvUjZGcWZCSndYMlh2ZlpMd1NmOWlLd0wSF2QwTnRhZXJrR1k2dWktZ1BnNFNzeUFVGiJBSktMRm1JZHo1ZTJXWmlhTlhTTmxscHYzUVZFQ2pEUmdBEgQ0Njk4GgEzIhgKBmltZ2RpaRIOc1lKSUFCY0c1a1FKd00iFwoFZG9jaWQSDnBDemx4Tks3UnFqVS1NIigKBGVxbGQSIENnSUlBQkFBT2dRSUFCQUFWU2hiTno5Z0FXMmZLaUlfKhBlLXNZSklBQmNHNWtRSndNIAQqFwoBcxIQZS1zWUpJQUJjRzVrUUp3TRgBMAEYByDZ2rmcDjABSgoIAhACGAIgAigC), [one more](https://share.google/aK3aCeaoRTZ3RZsfX). He has one of those tragically romantic stories worth of the greatest artists of all times: strongly critical of the Communist regime, sympathizer of the LGBTQ+ culture, he died of suicide at a very young age. He also wrote some very touching and simple poetry."
+      - tag: "Literature"
+        text: "I am reading [The Remains of the Day](https://share.google/5wuoqicIBOLIcbpoy), by the Japanese-born British writer Kazuo Ishiguro (Nobel laureate). It’s a quintessentially English novel: a butler reminisces of his past. The pace is slow, the beauty of the English countryside is central, and it reflects on the concept of “dignity”."
+  - date: 2026-01-19
+    label: "Jan 19"
+    items:
+      - tag: "Art"
+        text: "[Raoof Haghighi](https://www.google.com/search?sa=X&sca_esv=285be1eebaca6397&hl=en-CH&sxsrf=ANbL-n4zxLPnNk2wR4kiKn7XOW9DjOOThw:1770387601525&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3p-ML-906rRL_m6h4jR-tdAeyw6pOVABma0FfM0NmtARdcuGnZVoiSrEQCt2b10nLgJjnciRuscuXtl6T7LaQdB-7IDAHf4ggvMb4MhmUbyERsoIzQUPfJmSrmPY83QTqTYB-lh3fQ3h1v7UbctWqQlFH2QrrnCzHocNYFDXXOCcqBiYtw&q=Raoof+Haghighi&ved=2ahUKEwiX7engh8WSAxX2hv0HHWq8B5sQtKgLegQIFBAB&biw=1440&bih=692&dpr=2) is an Iranian artist, known for his very unusual and thought-provoking drawings. He’s clearly fascinated with the nude figure and women’s erotic bodily parts. Look at this, for instance: [Just take them and leave me alone!](https://share.google/FDVTn2bDMG35IOELZ)"
+  - date: 2026-01-20
+    label: "Jan 20"
+    items:
+      - tag: "Art"
+        text: "[Louis Legrand](https://www.google.com/search?sca_esv=285be1eebaca6397&rlz=1C5CHFA_enIT1065IT1065&sxsrf=ANbL-n6g9DxtzA6mxV_xWutHDKbAK6Rtqw:1770387776491&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6UIUc6UR6SuJFZzmDZDaBC4CrOGe_r1IzCvIWPeT0fHLbWonaMN665KUCeWPRJOX756uy31yTTsRhURaqe9uXOl6Hl3Jkm1PBl-J91LWaPqr1sRuwsD5XoEjDJ6-aUxjtk0Hx4Cp9ueg1jp7wEUEDMIH8Diw&q=louis+legrand&sa=X&sqi=2&ved=2ahUKEwib76C0iMWSAxUmgv0HHYomH2gQtKgLegQIExAB&biw=1440&bih=692&dpr=2), French painter de la Fin de Siècle. [This](https://share.google/8PHEHnJepnooYZ6qx) paining in particular is somewhere between fascinating and disturbing, it’s so sensual."
+      - tag: "Art"
+        text: "[Wayne Thiebaud](https://www.google.com/search?sca_esv=285be1eebaca6397&hl=en-CH&sxsrf=ANbL-n6oRxjXOiT8NuTWT9vzsYaIXKwV5A:1770387907153&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6UIUc6UR6SuJFZzmDZDaBCXj3NZJ_DMK_QqUo9V0Ifj3kWCvLRczwi8sVDiSCmOZCXGqKw6k_GLQRZn73mKfyvn4ktfVXf2HeMyJv0OAFtIWWsuK0DDoraKdnPF2fA-lei64B80YcAqRtG8I7i-NZzwIo2pQ&q=Wayne+Thiebaud&sa=X&ved=2ahUKEwjt78fyiMWSAxVehf0HHRGoOCsQtKgLegQIFRAB&biw=1440&bih=692&dpr=2), a curious contemporary American painter who lived a long and full life."
+      - tag: "Art"
+        text: "[Anne Magill](https://share.google/1tMcGfHdx3Lsie7UC)’s paintings are so romantic! The low light and their intentionally out-of-focus take make them timeless."
+      - tag: "Art"
+        text: "[Ernie Barnes](https://share.google/V0Gz9BTmnzzIijdQP): SUPER interesting “black” artist! His style is so unique and distinctive, I had never seen anything like that. His paintings look so alive."
+  - date: 2026-01-21
+    label: "Jan 21"
+    items:
+      - tag: "Cinema"
+        text: "[Idiocracy](https://en.wikipedia.org/wiki/Idiocracy), a movie that I got recommended."
+      - tag: "Politics"
+        text: "I learned about [Stephen Miran](https://en.wikipedia.org/wiki/Stephen_Miran), I didn’t know he is one of the masterminds behind Trump’s moves."
+      - tag: "Art"
+        text: "[Ivan Pokidyshev](https://www.google.com/search?client=ms-android-samsung-rvo1&hs=rvCp&sca_esv=cc34ee859529854e&biw=360&bih=609&aic=0&sxsrf=ANbL-n5JI_tsdhwZ3B-kVxOhwcfrXrOatA:1769031794364&udm=2&fbs=ADc_l-bUFwqhaYUawBg9V_vvcop31BzI1_7S49ipDhGdQBg5HLtLLFsbG5jZ41PQdliiQDr4WVOMtfAeAGlywEp_bdK9EHe2Vg9eWfWKfkotjfFHhvMFvWH5l0BXUY8zoU2XOxDvllN0h6eEiMRdyke4jgBN5YxMqeiibnN9ijeuA_x5C9dyq9ZVRjKqcEg9cxOMWkwp9DDn_v_8OBJv-Xo37EqQIcVk_c3nl1zNYJxt2t-KgF6Zl7Q&q=ivan+pokidyshev&sa=X&ved=2ahUKEwjI_Mv9zJ2SAxXn9wIHHcNwHdcQtKgLegQIGhAB), very weird art-style. I am not sure I completely appreciate it and like it, but for sure it’s…different."
+  - date: 2026-01-22
+    label: "Jan 22"
+    items:
+      - tag: "Art"
+        text: "[Kay Nielsen](https://www.google.com/search?sca_esv=285be1eebaca6397&rlz=1C5CHFA_enIT1065IT1065&sxsrf=ANbL-n52kKNzvCc00BDzuXqyilEzOyZl5Q:1770388314922&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHATKK1pbO_OOOJtiQ_Hxe6g6q4p7U3zzaxAaoF0ALYcn9XREC2n2Qr8tseohdeRLgp9NzjuGQXNwpFS2ILDxM2Zj2uS_3Jb7RZ8IxzScrABHQbhiQ2A&q=kay+nielsen&sa=X&ved=2ahUKEwiehoC1isWSAxUI9LsIHecQC3AQtKgLegQIEBAB&biw=1440&bih=692&dpr=2), absolutely dreamy decadent illustrator. I love this style."
+      - tag: "Art"
+        text: "[Edmund Dulac](https://share.google/Hvz03KtMqqgBRFZDc), another illustrator, this time French."
+  - date: 2026-01-23
+    label: "Jan 23"
+    items:
+      - tag: "Art"
+        text: ": [Malcolm Liepke](https://en.wikipedia.org/wiki/Malcolm_T._Liepke), one of my best finds lately. I am absolutely blown away but the intensity and the melancholy of his works, they’re so expressive. Here are some examples: [one](https://share.google/dgZuo1IgiUeZdmpBI%20%20Malcolm%20Liepke), [two](https://share.google/3JLlfn1ayEx4e11c0), [three](https://share.google/F5qIeLhh04AgBSos5). I personally find there is a latent sexual tension in all of his paintings."
+      - tag: "Art"
+        text: "[Reclining Female Nude](https://www.thehistoryofart.org/gustav-klimt/reclining-female-nude/). I never would have thought that Klimt could have done something like this, it’s so modern."
+      - tag: "Art"
+        text: "[Andrew Wyeth, Christina's World](https://www.google.com/imgres?imgurl=https://www.moma.org/media/W1siZiIsIjE2NTQ1NyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MTQ0MFx1MDAzZSJdXQ.jpg?sha%3D87dcd730f5d306a4&tbnid=vZFd9u7toIKvCM&vet=1&imgrefurl=https://www.moma.org/collection/works/78455&docid=pydvfmbefpnRHM&w=2000&h=1339&source=sh/x/im/m1/0&kgs=964ad8b628537e23&shem=shrtsdl&utm_source=shrtsdl,sh/x/im/m1/0)"
+      - tag: "Art"
+        text: "[Kent Rockwell](https://www.google.com/imgres?imgurl=https://i.ebayimg.com/images/g/aIkAAOSwzNJhXhLi/s-l1200.jpg&tbnid=HnVyHGmGF_MTHM&vet=1&imgrefurl=https://www.ebay.com/itm/165113456870&docid=dEoVZm5Su5O17M&w=1000&h=836&source=sh/x/im/m1/0&kgs=ea2e4c7c2f5dbb9d&shem=shrtsdl&utm_source=shrtsdl,sh/x/im/m1/0): this is incredible!"
+      - tag: "Art"
+        text: "Interesting [Monnalisa-themed painting](https://share.google/BVq3p12JGZK6zer7T)from Gerhard Glueck."
+      - tag: "Art"
+        text: "This made me think of the famous “Hunters in the Snow” painting from Pieter Bruegel the Elder, but in Russian style: [Winter, Boris Kustodiev](https://share.google/Y2zC8YmCw5bzk72Mc). He’s quite a fine painter, too, very talented in depicting landscapes and wintery scenarios."
+      - tag: "Ballet"
+        text: "I went to the ballet and saw [this performance](https://youtu.be/Xz9h0KqzIro?si=Aej_KcqlbbDL5ncI) live. I cannot quite explain it and I couldn’t find a full recording of it, but it was so delicate and suspended in time, truly unique. It reminded me that it’s so beautiful to be positively surprised when you expect it the least, sometimes."
+  - date: 2026-01-24
+    label: "Jan 24"
+    items:
+      - tag: "Art"
+        text: "[Yuri Pimenov](https://www.google.com/search?sa=X&sca_esv=074920bdea4960d4&hl=en-CH&sxsrf=ANbL-n5A7qCq6ad6XmnXr7Na_1mU7aUz7g:1770670946645&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6UIUc6UR6SuJFZzmDZDaBCXj3NZJ_DMK_QqUo9V0Ifj9IbhxoNLUNajvpcn0vNmNjR5N6GkMFsM25AFm-Rbht--GOKv01yfbVGGC3oFYWVHORzp1y2Y8rDFM7z1NL6TUpliCmBxA87lC9Txwuz8UhmLngy8Q&q=Yuri+Pimenov&ved=2ahUKEwiJxqemp82SAxUCov0HHanjDroQtKgLegQIEBAB&biw=1440&bih=692&dpr=2), Russian artist painter of the Russian modern industrial era."
+      - tag: "Art"
+        text: "[Nikolay Zaitsev](https://www.google.com/search?q=Nikolay+Zaitsev+artist&sca_esv=38663ec9571eddc2&rlz=1C5CHFA_enIT1065IT1065&udm=2&biw=1440&bih=815&aic=0&sxsrf=ANbL-n5RNJCcBLJr4ASXsyMPXrmLdEaaPw%3A1769275701672&ei=NQF1adTZKIqN-d8Pm5vFkAk&ved=0ahUKEwiUyNTN2aSSAxWKRv4FHZtNEZIQ4dUDCBI&uact=5&oq=Nikolay+Zaitsev+artist&gs_lp=Egtnd3Mtd2l6LWltZyIWTmlrb2xheSBaYWl0c2V2IGFydGlzdEjCHlD5C1i5HXACeACQAQCYAXOgAeIDqgEDNi4xuAEDyAEA-AEBmAIDoAJAwgIFEAAYgATCAgQQABgemAMAiAYBkgcBM6AH1QKyBwExuAc6wgcDMC4zyAcGgAgA&sclient=gws-wiz-img)… a very unusual Russian Dalì?"
+      - tag: "Art"
+        text: "[18 Soviet interiors depicted in Russian paintings](https://www.gw2ru.com/arts/1200-soviet-interiors-painting): I love in particular the first one from Yuri Pimenov!"
+      - tag: "Art"
+        text: "[Gateway to Russia](https://www.gw2ru.com/). Cool and interesting website that I didn’t explore too much because I didn’t want to be flagged by the US authorities."
+      - tag: "Literature"
+        text: "[100 Main Russian Books that everyone should read](https://www.gw2ru.com/arts/226082-100-main-russian-books): more on Russian immense heritage."
+      - tag: "Art"
+        text: "[Jef Bourgeau](https://detroitmona.wixsite.com/artgarage/artwork), I quite enjoy, in particular, the lighting in “Winter Light”."
+      - tag: "Art"
+        text: "[Lesbian Lovers](https://share.google/Vek4DxfKvWciIyWhh): incredible Japanese painting from the 19th century!"
+  - date: 2026-01-25
+    label: "Jan 25"
+    items:
+      - tag: "Art"
+        text: "[Franz Stuck, Lucifer](https://www.reddit.com/r/ArtConnoisseur/comments/1q8k18o/franz_stuck_lucifer_c_1890/)"
+      - tag: "Art"
+        text: "[Ludovic Alleaume, Beethoven Listening to Music](https://www.reddit.com/r/ArtConnoisseur/comments/1pfzw3r/ludovic_alleaume_beethoven_listening_to_muse_1928/): I am absolutely struck by this painting, it is just so intense and intimate."
+      - tag: "Art"
+        text: "[Jeanne Mammen - Ash Wednesday](https://www.reddit.com/r/museum/comments/1ls7apf/jeanne_mammen_ash_wednesday_aschermittwoch_ca_1926/)"
+      - tag: "Art"
+        text: "[Ludovic Alleaume, Paradise Nocturne](https://share.google/4kv66egUyPM46lbrG): this artist, the same of Beethoven’s painting, is totally worth exploring, he’s very expressive."
+      - tag: "Art"
+        text: "[Richard Savoie, untitled](https://www.reddit.com/r/museum/comments/1pd7njx/richard_savoie_1959_untitled/): I like the way the light reflects on the snow, in the night."
+      - tag: "Art"
+        text: "[Hiroshi Nagai](https://www.reddit.com/r/TheNightFeeling/comments/1gn0o50/hiroshi_nagai_truly_captures_the_night_feeling/)’s paintings capture the perfect night feeling: I love the colors and the La La Land vibes."
+      - tag: "Art"
+        text: "[More](https://www.google.com/search?kgmid=/g/120lqngk&hl=en-CH&q=Hiroshi+Nagai&shem=bdslc,shrtsdl&shndl=17&source=sh/x/kp/osrp/m1/2&kgs=239aaf5963b5ebde&utm_source=bdslc,shrtsdl,sh/x/kp/osrp/m1/2) on Hiroshi Nagai."
+      - tag: "Art"
+        text: "[Sleepless Night](https://www.google.com/imgres?imgurl=https://uploads5.wikiart.org/00291/images/hanno-karlhuber/die-schlaflose-nacht-7.jpg!Large.jpg&tbnid=fWGQbDslMf7m1M&vet=1&imgrefurl=https://www.wikiart.org/en/hanno-karlhuber/die-schlaflose-nacht&docid=i0qkCQPUcTBcpM&w=693&h=600&source=sh/x/im/m1/2&kgs=a5f4a39bfd9fdd07&shem=bdslc,isst,shrtsdl&utm_source=bdslc,isst,shrtsdl,sh/x/im/m1/2)."
+      - tag: "Art"
+        text: "[Franz Sedlacek, The Library](https://en.wikipedia.org/wiki/Franz_Sedlacek#/media/File:Franz_Sedlacek_-_Bibliothek.jpg): this artist’s work is interesting, clearly surrealistic."
+      - tag: "Art"
+        text: "[Eyvind Earle](https://www.google.com/imgres?imgurl=https://doorofperception.com/wp-content/uploads/eyvind-earle-on-doorofperception.com-5.jpeg&tbnid=lihsplVp0wJ95M&vet=1&imgrefurl=https://doorofperception.com/2013/07/eyvind-earle-dream-landscapes/&docid=jfYuWDsBRP7dUM&w=1210&h=892&source=sh/x/im/m1/0&kgs=c1e68ccdcce8c418&shem=shrtsdl&utm_source=shrtsdl,sh/x/im/m1/0): this man can paint trees like no other. I honestly don’t find a deeper meaning in his work, but boy can he do trees."
+      - tag: "Art"
+        text: "[Ivan Pokidyshev. Wanderers in the Dark](https://www.google.com/imgres?imgurl=https://www.erarta.com/upload/iblock/b44/yjf2zc8y95baw4idp7yzfynf6pn5iujf.jpg&tbnid=Aq85UGjWQNcS_M&vet=1&imgrefurl=https://www.erarta.com/en/calendar/exhibitions/detail/061224/&docid=CkKDgY0t7C7pwM&w=1200&h=770&source=sh/x/im/m1/0&kgs=4c8e965d3c358e31&shem=shrtsdl&utm_source=shrtsdl,sh/x/im/m1/0): the way he plays with fluorescence is intriguing. Maybe not my kind of thing, but certainly… different."
+  - date: 2026-01-26
+    label: "Jan 26"
+    items:
+      - tag: "Art"
+        text: "[Aubrey Beardsley](https://www.google.com/imgres?imgurl=https://www.english-heritage.org.uk/siteassets/home/visit/blue-plaques/find-a-plaque/blue-plaques-a-e/a-beardsley-2.jpg?maxwidth%3D580%26mode%3Dnone%26scale%3Ddownscale%26quality%3D60%26anchor%3D%26WebsiteVersion%3D20200219&tbnid=ds3UC57neQBEIM&vet=1&imgrefurl=https://www.english-heritage.org.uk/visit/blue-plaques/aubrey-beardsley/&docid=HoxNLdxldob4QM&w=540&h=421&source=sh/x/im/m1/0&kgs=24e958e564820e90&shem=shrtsdl&utm_source=shrtsdl,sh/x/im/m1/0)… oh please erect a statue to this guy. I just can’t get enough of his decadent, *Fin de siècle* aesthetics."
+  - date: 2026-01-27
+    label: "Jan 27"
+    items:
+      - tag: "Art"
+        text: "[The Bedroom](https://www.reddit.com/r/museum/comments/1oe8tli/nick_alm_bedroom_2023/): well, interesting point of view… ;)"
+      - tag: "Art"
+        text: "[Vincent Giarrano, Morning Light](https://www.reddit.com/r/museum/comments/1pmblf6/vincent_giarrano_1960_morning_light/)"
+      - tag: "Art"
+        text: "[Leon Spillaert, Vertigo](https://www.reddit.com/r/museum/comments/1m35h7o/l%C3%A9on_spilliaert_vertigo_1908/): this man was a genius, and his style is unmistakable."
+      - tag: "Art"
+        text: "[Leon Spillaert, on the life of an unsung genius](https://www.google.com/imgres?imgurl=https://i.guim.co.uk/img/media/cb9579a049b2d57ae022d9ebd7bc9bc7a36f71d1/0_0_5135_6599/master/5135.jpg?width%3D700%26quality%3D85%26auto%3Dformat%26fit%3Dmax%26s%3D953255678b2515051c1a80f4f1440155&tbnid=RyeZvhytPPf_wM&vet=1&imgrefurl=https://www.theguardian.com/artanddesign/2020/feb/09/leon-spilliaert-belgian-artist-ostend-royal-academy&docid=9saNOG4sA1EXgM&w=700&h=900&source=sh/x/im/m1/2&kgs=f933c4dcce85975c&shem=bdslc,isst,shrtsdl&utm_source=bdslc,isst,shrtsdl,sh/x/im/m1/2). Article on Spillaert’s life, totally worth reading."
+  - date: 2026-01-28
+    label: "Jan 28"
+    items:
+      - tag: "Miscellaneous"
+        text: "[Nessy Chic, 13 things I found on the Internet Today](https://www.messynessychic.com/2022/10/10/13-things-i-found-on-the-internet-today-vol-dcxiv/): I particularly like the illustrations for Carmen."
+      - tag: "Art"
+        text: "[Alastair](https://www.google.com/imgres?imgurl=https://am-s3-bucket-assets.s3.eu-west-2.amazonaws.com/roseberys/prod/lot_images/xlarge/2f7e573d-eb1c-ef11-9f8a-6045bdf1d60d/53d7a0a7-914d-ef11-bfe2-000d3ad52fc5.webp&tbnid=Xlw0hQkdevAYNM&vet=1&imgrefurl=https://www.roseberys.co.uk/a0663-lot-572872-alastair-hans-henning-otto-harry-baron-von-voigt-german-1887-1969-embracing&docid=ceIFBuldLE6w9M&w=4000&h=4282&source=sh/x/im/m1/0&kgs=ec68dff414ffa983&shem=shrtsdl&utm_source=shrtsdl,sh/x/im/m1/0): his style is somewhat similar to that of Aubrey Beardsley.."
+      - tag: "Art"
+        text: "[Messy Nessy Chic, another \"13 Things I found on the Internet Today\"](https://www.messynessychic.com/2026/01/08/13-things-i-found-on-the-internet-today-vol-582/): worth of mention is thing no. 5 (illustrations for an Art Noveau Calendar)."
+      - tag: "Photography"
+        text: "[American Girl in Italy: behind the Iconic photo](https://www.messynessychic.com/2013/04/19/american-girl-in-italy-behind-the-iconic-photo/): very pleasant article."
+      - tag: "Art"
+        text: "[Felix Vallotton, Le Violon](https://d7hftxdivxxvm.cloudfront.net/?height=800&quality=50&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F6qYgElYacLJykwHutpr4Nw%2Fnormalized.jpg&width=586): Swiss painter."
+  - date: 2026-01-29
+    label: "Jan 29"
+    items:
+      - tag: "Photography"
+        text: "[Joseph Koudelka](https://share.google/TnoZW7NHMZlNnCaTn): very famous and quite impactful photo of a wolf in Versailles, if I’m not mistaken."
+      - tag: "Photography"
+        text: "[Photography Website](https://loeildelaphotographie.com/en/timemachine/): it’s got some interesting references, every now and then."
+      - tag: "Photography"
+        text: "[Laurence Sackman (1948-2020)](https://loeildelaphotographie.com/en/archives-laurence-sackman-1948-2020/): this photo is incredible, and so sensual in its simplicity."
+      - tag: "Art"
+        text: "[Max Klinger](https://www.google.com/imgres?imgurl=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Downfall%252C_from_the_series_A_Life%252C_Opus_VIII%252C_no._12_%25281884%2529%252C_etching_and_drypoint%252C_27.6_%25C3%2597_22.8_cm._Art_Institute_of_Chicago.jpg/250px-Downfall%252C_from_the_series_A_Life%252C_Opus_VIII%252C_no._12_%25281884%2529%252C_etching_and_drypoint%252C_27.6_%25C3%2597_22.8_cm._Art_Institute_of_Chicago.jpg&tbnid=msaP2EqKxcubXM&vet=1&imgrefurl=https://en.wikipedia.org/wiki/Max_Klinger&docid=qex68I8AwkefWM&w=250&h=308&source=sh/x/im/m1/2&kgs=dd92e3854f1cad33&shem=bdsle,isst,shrtsdl&utm_source=bdsle,isst,shrtsdl,sh/x/im/m1/2)"
+  - date: 2026-01-30
+    label: "Jan 30"
+    items:
+      - tag: "Photography"
+        text: "[Helga Stentzel](https://www.google.com/search?client=ms-android-samsung-rvo1&hs=9AGp&sca_esv=bb116f2b8daaf2d6&sxsrf=ANbL-n4V2jW91qQLJJSO5g_6CFxJC7OEPQ:1769780611994&udm=2&fbs=ADc_l-byipRaccqV0jmfPhi1DgzPtklXGmVkws8Z_lBff884vwWzYGOXmwhR8m6ZBpcqcPIygX2pO_pfNpUEhZEK-M0MqeKc30iDjd5gva0IURlc2NcfIR4ILZ33kLkccYOrQHKUsmnvjr0jQw7b7JSTs8ofYVPazwfFxAMQN5hfX0VIhfT8RlQ6E7p6OmO8YMyeeUjEeEk7g2CO044tyFWlOlz5wyakxyw4iYYfK92e9wfOFwW4q8I&q=helga+stentzel&sa=X&ved=2ahUKEwi0_9TFsrOSAxXq-wIHHQHCNckQtKgLegQIEhAB&biw=360&bih=609&dpr=3&aic=0): thought-provoking (in a way) modern photographer. Her photos are… cute."
+      - tag: "Art"
+        text: "[Barbara Kruger](https://www.reddit.com/r/museum/comments/1qqu77x/barbara_kruger_untitled_questions_1991/): nothing special but I just liked it."
+      - tag: "Art"
+        text: "[Shiro Kasamatsu - Deer in Snow](https://www.reddit.com/r/museum/comments/1qqk1rz/shiro_kasamatsu_deer_in_snow_1961/): very tender painting."
+      - tag: "Photography"
+        text: "[Lee Sangsoo](https://www.google.com/imgres?imgurl=https://s3files.core77.com/blog/images/1216177_81_110394_ZNqvRbION.jpg&tbnid=OZtVt8Gd_i5SnM&vet=1&imgrefurl=https://www.core77.com/posts/110394/Lee-Sangsoos-3D-Line-Drawings&docid=lLkbVrQd0uPoEM&w=880&h=880&source=sh/x/im/m1/0&kgs=8747dcef01a366d1&shem=shrtsdl&utm_source=shrtsdl,sh/x/im/m1/0)’s cat series: honestly I think the whole series is so funny and brilliant."
+  - date: 2026-01-31
+    label: "Jan 31"
+    items:
+      - tag: "Art"
+        text: "This day marks the very beginning of my newly discovered obsession with Leon Spilliaert:"
+        sub:
+          - text: "[Faun by Moonlight](https://www.reddit.com/r/ArtConnoisseur/comments/1qrhdl9/l%C3%A9on_spilliaert_faun_by_moonlight/): probably the painting that convinced me once and for all of the greatness of this artist."
+          - text: "[How Leon Spillaert's dark paintings are strangely uplifting](https://www.bbc.com/culture/article/20200319-how-lon-spilliaerts-dark-paintings-are-strangely-uplifting) (article)"
+          - text: "[What I Admire About the Hauntingly Brilliant Art of this Lesser-Known Belgian Genius](https://christopherpjones.medium.com/the-hauntingly-brilliant-art-of-l%C3%A9on-spilliaert-a-lesser-known-genius-from-belgium-56d9e6d6fc72) (article)"
+          - text: "[Official Website](https://leonspilliaert.be/en)"
+          - text: "[He was a scuptor, too!](https://imgur.com/a/leon-spilliaert-p16iBes)"
+          - text: "[The strangest painting ever](https://www.youtube.com/watch?app=desktop&v=p4gSljZUYtk) (referred to “Faun by Moonlight”)"
+      - tag: "Art"
+        text: "[Arnold Böcklin - Self Portrait with Death Playing The Fiddle](https://www.reddit.com/r/ArtHistory/comments/1qf6o4j/favorite_self_portraits/)"

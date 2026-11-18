@@ -1,0 +1,182 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import CueSub from "../../components/CueSub.astro";
+import { getCueDays, md, tagCounts, slug } from "../../lib/cues";
+
+const days = await getCueDays();
+const tags = tagCounts(days);
+const total = tags.reduce((n, [, c]) => n + c, 0);
+const notes = (await getCollection("notes", (n) => !n.data.draft)).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const months = new Map<string, typeof days>();
+for (const d of days) {
+  const key = d.date.toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" });
+  months.set(key, [...(months.get(key) ?? []), d]);
+}
+const TOP = 10;
+---
+
+<Base title="Thoughts & Cues" fluid="soft" description="Thoughts & Cues — a running log of art, music, books, films and ideas worth passing on, by Rebecca Ceccatelli.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Newsletter</p>
+      <h1 class="h1" data-reveal style="--d:80ms">Thoughts <span class="ital iris-text">&amp; Cues</span></h1>
+      <p class="lede" data-reveal style="--d:160ms">
+        A running log of the art, music, books, films and ideas I bump into and want to pass on — {total} cues so far.
+        Some of them will grow into short articles of their own.
+      </p>
+    </div>
+  </header>
+
+  {notes.length > 0 && (
+    <section class="section-tight">
+      <div class="wrap">
+        <p class="eyebrow">Longer notes</p>
+        <ul class="notes">
+          {notes.map((n) => (
+            <li>
+              <a class="card glass" href={`/cues/${n.id}/`}>
+                <span class="chip">{n.data.tag}</span>
+                <span class="h2" style="font-size:1.8rem">{n.data.title}</span>
+                <span class="muted small">{n.data.summary}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <div class="toolbar-shell">
+    <div class="wrap">
+      <div class="toolbar glass" role="search">
+        <div class="filters" role="group" aria-label="Filter by topic">
+          <button type="button" class="f" data-tag="" aria-pressed="true">All</button>
+          {tags.map(([t, c], i) => (
+            <button type="button" class:list={["f", { extra: i >= TOP }]} data-tag={slug(t)} aria-pressed="false">
+              {t} <span class="c num">{c}</span>
+            </button>
+          ))}
+          <button type="button" class="f more" data-more aria-expanded="false">+ {tags.length - TOP} more</button>
+        </div>
+        <label class="search">
+          <span class="sr">Search</span>
+          <input type="search" placeholder="Search…" data-search autocomplete="off" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-tight">
+    <div class="wrap log">
+      {[...months.entries()].map(([month, ds]) => (
+        <section class="month" data-month>
+          <h2 class="month-title h2">{month}</h2>
+          {ds.map((d) => (
+            <div class="day" data-day>
+              <p class="date small num">{d.label}</p>
+              <ul class="items">
+                {d.items.map((it) => (
+                  <li class="item" data-tag={it.tag ? slug(it.tag) : ""}>
+                    {it.tag && <span class="chip">{it.tag}</span>}
+                    <div class="txt">
+                      <p set:html={md(it.text)} />
+                      {it.note && <a class="link-arrow small" href={`/cues/${it.note}/`}>Read the note <span>→</span></a>}
+                      {it.sub?.length ? <CueSub items={it.sub} /> : null}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      ))}
+      <p class="empty muted" hidden data-empty>Nothing matches — try another word or topic.</p>
+    </div>
+  </section>
+</Base>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const root = document.querySelector(".log");
+    if (!root) return;
+    const buttons = [...document.querySelectorAll<HTMLButtonElement>(".f[data-tag]")];
+    const more = document.querySelector<HTMLButtonElement>("[data-more]");
+    const input = document.querySelector<HTMLInputElement>("[data-search]");
+    const items = [...root.querySelectorAll<HTMLElement>(".item")];
+    const index = items.map((el) => el.textContent!.toLowerCase());
+    let tag = "", q = "";
+
+    function apply() {
+      items.forEach((el, i) => { el.hidden = !((!tag || el.dataset.tag === tag) && (!q || index[i].includes(q))); });
+      root!.querySelectorAll<HTMLElement>("[data-day]").forEach((d) => { d.hidden = !d.querySelector(".item:not([hidden])"); });
+      root!.querySelectorAll<HTMLElement>("[data-month]").forEach((m) => { m.hidden = !m.querySelector("[data-day]:not([hidden])"); });
+      root!.querySelector<HTMLElement>("[data-empty]")!.hidden = !!root!.querySelector(".item:not([hidden])");
+    }
+    buttons.forEach((b) => b.addEventListener("click", () => {
+      tag = b.dataset.tag!;
+      buttons.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      apply();
+    }));
+    more?.addEventListener("click", () => {
+      const open = more.getAttribute("aria-expanded") !== "true";
+      more.setAttribute("aria-expanded", String(open));
+      document.querySelector(".filters")!.classList.toggle("open", open);
+      more.textContent = open ? "Fewer" : more.dataset.label ?? more.textContent;
+    });
+    if (more) more.dataset.label = more.textContent!;
+    let t: number | undefined;
+    input?.addEventListener("input", () => { clearTimeout(t); t = window.setTimeout(() => { q = input.value.trim().toLowerCase(); apply(); }, 120); });
+  });
+</script>
+
+<style>
+  .notes { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 14px; }
+  .notes a { display: grid; gap: 12px; justify-items: start; }
+
+  .toolbar-shell { position: sticky; top: 72px; z-index: 20; padding: 8px 0; }
+  .toolbar { display: flex; gap: 10px; align-items: center; justify-content: space-between; padding: 8px; border-radius: 22px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
+  .f {
+    font: 500 0.82rem/1 var(--sans); color: var(--ink-2); background: transparent; border: 1px solid transparent;
+    padding: 8px 12px; border-radius: 999px; cursor: pointer; transition: background 0.3s, color 0.3s, border-color 0.3s;
+  }
+  .f:hover { background: rgba(255, 255, 255, 0.8); color: var(--ink); }
+  .f[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+  .f .c { opacity: 0.5; font-size: 0.72rem; margin-left: 2px; }
+  .f.extra { display: none; }
+  .filters.open .f.extra { display: inline-block; }
+  .f.more { border-color: var(--line-2); }
+  .search input {
+    font: 0.9rem var(--sans); width: 180px; padding: 9px 14px; border-radius: 999px; color: var(--ink);
+    border: 1px solid var(--line-2); background: rgba(255, 255, 255, 0.7); outline: none; transition: border-color 0.3s, width 0.5s var(--ease);
+  }
+  .search input:focus { border-color: var(--ink); width: 220px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  @media (max-width: 760px) {
+    .toolbar-shell { position: static; }
+    .toolbar { flex-direction: column; align-items: stretch; }
+    .search input, .search input:focus { width: 100%; }
+  }
+
+  .log { padding-top: 24px; }
+  .month { margin-bottom: clamp(48px, 7vw, 88px); }
+  .month-title { padding-bottom: 16px; border-bottom: 1px solid var(--ink); }
+  .day { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 24px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+  .date { font-weight: 600; padding-top: 4px; position: sticky; top: 150px; align-self: start; }
+  .items { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+  .item { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 16px; align-items: start; }
+  .item > .chip { justify-self: start; margin-top: 1px; }
+  .txt { color: var(--ink-2); max-width: 70ch; }
+  .txt :global(a) { color: var(--accent); text-decoration-color: rgba(90, 69, 214, 0.35); }
+  .txt :global(a:hover) { text-decoration-color: currentColor; }
+  .txt :global(ul) { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 6px; font-size: 0.95rem; }
+  .txt :global(li::marker) { color: var(--muted); }
+  .txt .link-arrow { margin-top: 10px; }
+  @media (max-width: 760px) {
+    .day { grid-template-columns: 1fr; gap: 12px; }
+    .date { position: static; }
+    .item { grid-template-columns: 1fr; gap: 8px; }
+  }
+</style>
