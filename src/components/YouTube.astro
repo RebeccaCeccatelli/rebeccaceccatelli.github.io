@@ -4,7 +4,7 @@ const { id, title, large = false } = Astro.props;
 ---
 
 <button class:list={["yt", { large }]} type="button" data-yt={id} aria-label={`Play: ${title}`}>
-  <img src={`https://i.ytimg.com/vi/${id}/${large ? "maxresdefault" : "hqdefault"}.jpg`} alt="" loading="lazy" decoding="async" />
+  <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" decoding="async" />
   <span class="play" aria-hidden="true">
     <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg>
   </span>

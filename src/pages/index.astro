@@ -75,7 +75,7 @@ const latest = days.slice(0, 6).flatMap((d) => d.items.map((i) => ({ ...i, label
   .name {
     font-family: var(--serif); font-size: clamp(2.6rem, 5.5vw, 4.4rem); line-height: 1.05; letter-spacing: -0.01em;
     margin: 20px 0 clamp(24px, 3.5vw, 36px); padding-right: 0.05em; width: fit-content;
-    color: #7a5236; /* warm bronze */
+    color: var(--heading);
   }
   .hero-top { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 
@@ -114,7 +114,7 @@ const latest = days.slice(0, 6).flatMap((d) => d.items.map((i) => ({ ...i, label
   }
   .row:hover::before { opacity: 1; transform: none; }
   .n { font-size: 0.8rem; color: var(--muted); }
-  .t { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.1rem); line-height: 1; transition: transform 0.6s var(--ease); }
+  .t { color: var(--heading); font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.1rem); line-height: 1; transition: transform 0.6s var(--ease); }
   .row:hover .t { transform: translateX(8px); font-style: italic; }
   .b { font-size: 0.98rem; max-width: 34em; }
   .go { font-size: 1.3rem; transition: transform 0.5s var(--ease); justify-self: end; }
