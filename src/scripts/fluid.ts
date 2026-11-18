@@ -5,9 +5,9 @@
 export type FluidMode = "full" | "soft" | "subtle";
 
 const MODES: Record<FluidMode, { dye: number; grid: number; warp: number; force: number }> = {
-  full: { dye: 0.95, grid: 1, warp: 1, force: 1 },
-  soft: { dye: 0.65, grid: 0.8, warp: 0.85, force: 0.8 },
-  subtle: { dye: 0.38, grid: 0.55, warp: 0.6, force: 0.6 },
+  full: { dye: 0.42, grid: 1, warp: 1, force: 1 },
+  soft: { dye: 0.3, grid: 0.8, warp: 0.85, force: 0.8 },
+  subtle: { dye: 0.18, grid: 0.55, warp: 0.6, force: 0.6 },
 };
 
 // Iridescent pastel pigments: lilac, peach, aqua, rose, butter.
@@ -22,12 +22,12 @@ const PALETTE: [number, number, number][] = [
 const cfg = {
   SIM_RES: 128,
   DYE_RES: 768,
-  DENSITY_DISSIPATION: 0.9,
+  DENSITY_DISSIPATION: 1.8,
   VELOCITY_DISSIPATION: 0.45,
   PRESSURE: 0.8,
   PRESSURE_ITERATIONS: 20,
   CURL: 18,
-  SPLAT_RADIUS: 0.22,
+  SPLAT_RADIUS: 0.14,
   SPLAT_FORCE: 5200,
 };
 
@@ -104,7 +104,7 @@ const FS = {
       vec3 dye = texture2D(uTexture, vUv).rgb;
       float amt = max(dye.r, max(dye.g, dye.b));
       vec3 pigment = dye / max(amt, 0.0001);
-      float a = (1.0 - exp(-amt * 2.2)) * uDye;
+      float a = min((1.0 - exp(-amt * 2.2)) * uDye, 0.32);
 
       // lighting from the dye's height field gives the "liquid" sheen
       float hL = length(texture2D(uTexture, vL).rgb), hR = length(texture2D(uTexture, vR).rgb);
@@ -366,7 +366,7 @@ export function startFluid(canvas: HTMLCanvasElement, initialMode: FluidMode = "
       setTimeout(() => {
         const x = 0.2 + Math.random() * 0.6, y = 0.25 + Math.random() * 0.5;
         const a = Math.random() * Math.PI * 2, f = 600 + Math.random() * 500;
-        splat(x, y, Math.cos(a) * f * mode.force, Math.sin(a) * f * mode.force, pigment(0.55));
+        splat(x, y, Math.cos(a) * f * mode.force, Math.sin(a) * f * mode.force, pigment(0.25));
       }, 250 + i * 420);
     }
   }
@@ -381,7 +381,7 @@ export function startFluid(canvas: HTMLCanvasElement, initialMode: FluidMode = "
       pointer.moved = false;
       const f = cfg.SPLAT_FORCE * mode.force;
       const speed = Math.min(Math.hypot(pointer.dx, pointer.dy) * 40, 1);
-      splat(pointer.x, pointer.y, pointer.dx * f, pointer.dy * f, pigment(0.18 + 0.32 * speed));
+      splat(pointer.x, pointer.y, pointer.dx * f, pointer.dy * f, pigment(0.08 + 0.14 * speed));
     }
     step(dt);
     render();
