@@ -32,3 +32,12 @@ export function plain(text: string, max = 180) {
   const t = text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_`]/g, "");
   return t.length > max ? t.slice(0, max).replace(/\s+\S*$/, "") + "…" : t;
 }
+
+/** Stable soft colour (0–5) for a topic, so each tag keeps the same tint everywhere. */
+const FIXED: Record<string, number> = { Art: 3, Music: 2, Cinema: 4, Poetry: 1, Literature: 5, Photography: 0, Architecture: 1, Politics: 2 };
+export function tint(tag: string): number {
+  if (tag in FIXED) return FIXED[tag];
+  let h = 0;
+  for (const c of tag) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  return h % 6;
+}

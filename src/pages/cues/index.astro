@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import CueSub from "../../components/CueSub.astro";
-import { getCueDays, md, tagCounts, slug } from "../../lib/cues";
+import { getCueDays, md, tagCounts, slug, tint } from "../../lib/cues";
 
 const days = await getCueDays();
 const tags = tagCounts(days);
@@ -37,7 +37,7 @@ const TOP = 10;
           {notes.map((n) => (
             <li>
               <a class="card glass" href={`/cues/${n.id}/`}>
-                <span class="chip">{n.data.tag}</span>
+                <span class="chip" data-tint={tint(n.data.tag)}>{n.data.tag}</span>
                 <span class="h2" style="font-size:1.8rem">{n.data.title}</span>
                 <span class="muted small">{n.data.summary}</span>
               </a>
@@ -79,7 +79,7 @@ const TOP = 10;
               <ul class="items">
                 {d.items.map((it) => (
                   <li class="item" data-tag={it.tag ? slug(it.tag) : ""}>
-                    {it.tag && <span class="chip">{it.tag}</span>}
+                    {it.tag && <span class="chip" data-tint={tint(it.tag)}>{it.tag}</span>}
                     <div class="txt">
                       <p set:html={md(it.text)} />
                       {it.note && <a class="link-arrow small" href={`/cues/${it.note}/`}>Read the note <span>→</span></a>}

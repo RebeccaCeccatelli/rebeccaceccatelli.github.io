@@ -10,13 +10,16 @@ const MODES: Record<FluidMode, { dye: number; grid: number; warp: number; force:
   subtle: { dye: 0.18, grid: 0.55, warp: 0.6, force: 0.6 },
 };
 
-// Warm cream pigments: champagne, sand, caramel, latte, soft gold.
+// Cream-family pigments: champagne, sage, caramel, dusty blue, sand, blush, soft gold, clay.
 const PALETTE: [number, number, number][] = [
   [0.95, 0.88, 0.74],
-  [0.9, 0.8, 0.64],
+  [0.72, 0.78, 0.66],
   [0.84, 0.68, 0.5],
-  [0.8, 0.7, 0.58],
+  [0.66, 0.74, 0.82],
+  [0.9, 0.8, 0.64],
+  [0.88, 0.7, 0.66],
   [0.92, 0.8, 0.58],
+  [0.84, 0.62, 0.5],
 ];
 
 const cfg = {
