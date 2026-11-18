@@ -1,0 +1,20 @@
+---
+// Monogram: a treble clef whose stem is the R and whose lower loop is the C.
+// `bold` is the heavier cut for small sizes (nav, favicon).
+interface Props { bold?: boolean; class?: string; title?: string }
+const { bold = false, class: cls, title } = Astro.props;
+const w = bold
+  ? { loop: 7, bowl: 8, leg: 8.5, c: 8, ball: 8, stem: [5.5, 3.5] }
+  : { loop: 3.6, bowl: 4.6, leg: 5.2, c: 4.6, ball: 5.6, stem: [3.3, 1.8] };
+const [sb, st] = w.stem; // half-width at the base / top of the stem
+---
+
+<svg class={cls} viewBox="8 -2 108 202" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" role={title ? "img" : undefined} aria-hidden={title ? undefined : "true"}>
+  {title && <title>{title}</title>}
+  <path d={`M${52 - sb} 176 L${52 - st} 40 Q52 33 ${52 + st} 40 L${52 + sb} 176 A${sb} ${sb} 0 0 1 ${52 - sb} 176 Z`} fill="currentColor" stroke="none" />
+  <path d="M52 40 C52 15 57 6 63 6 C72 6 76 18 74 32 C71 52 52 66 38 80 C24 93 20 106 26 116 C32 126 48 128 62 126" stroke-width={w.loop} />
+  <path d="M40 104 C60 96 88 98 88 112 C88 123 73 127 60 127" stroke-width={w.bowl} />
+  <path d="M62 127 C72 139 84 152 98 158 C103 160 107 159 110 156" stroke-width={w.leg} />
+  <path d="M52 138 C32 141 17 155 18 170 C19 186 30 193 40 189" stroke-width={w.c} />
+  <circle cx="39" cy="185.5" r={w.ball} fill="currentColor" stroke="none" />
+</svg>

@@ -1,12 +1,16 @@
 ---
 import { profile, sections } from "../data/site";
+import Logo from "./Logo.astro";
 const year = new Date().getFullYear();
 ---
 
 <footer class="foot">
   <div class="wrap">
     <div class="top">
-      <p class="h2">Say <span class="ital iris-text">ciao</span>.</p>
+      <div class="sign">
+        <Logo class="sig" title="Rebecca Ceccatelli monogram" />
+        <p class="h2">Say <span class="ital iris-text">ciao</span>.</p>
+      </div>
       <div class="btns">
         <a class="btn" href={`mailto:${profile.email}`}>Email me <span class="arr">→</span></a>
         <a class="btn ghost" href={profile.links.linkedin} rel="me noopener" target="_blank">LinkedIn</a>
@@ -27,6 +31,8 @@ const year = new Date().getFullYear();
 <style>
   .foot { position: relative; z-index: 1; padding: clamp(64px, 9vw, 120px) 0 32px; }
   .top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 40px; }
+  .sign { display: flex; align-items: end; gap: 20px; }
+  .sign :global(.sig) { height: 92px; width: auto; color: var(--ink); flex: none; }
   .bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 20px; }
   .bottom nav { display: flex; gap: 18px; flex-wrap: wrap; }
   .bottom a { text-decoration: none; }

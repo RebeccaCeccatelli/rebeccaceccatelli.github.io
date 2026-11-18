@@ -1,6 +1,6 @@
 // A small GPU fluid simulation (stable fluids, after Jos Stam / Pavel Dobryakov),
 // re-tuned for a light, paper-coloured page: the mouse stirs pastel pigment into
-// the paper and bends a faint dot grid, like looking through moving water.
+// the paper, with a soft liquid sheen.
 
 export type FluidMode = "full" | "soft" | "subtle";
 
@@ -98,11 +98,11 @@ const FS = {
       float T = texture2D(uPressure, vT).x; float B = texture2D(uPressure, vB).x;
       vec2 v = texture2D(uVelocity, vUv).xy - vec2(R - L, T - B);
       gl_FragColor = vec4(v, 0.0, 1.0); }`,
-  // Light-page compositing: pigment over paper, a warped dot grid, a soft sheen.
+  // Light-page compositing: pigment over paper with a soft sheen.
   display: `precision highp float; varying vec2 vUv, vL, vR, vT, vB;
     uniform sampler2D uTexture; uniform sampler2D uVelocity;
-    uniform vec3 uPaper; uniform vec3 uInk;
-    uniform float uDye; uniform float uGrid; uniform float uWarp; uniform float uDpr;
+    uniform vec3 uPaper;
+    uniform float uDye;
     void main () {
       vec3 dye = texture2D(uTexture, vUv).rgb;
       float amt = max(dye.r, max(dye.g, dye.b));
@@ -117,19 +117,7 @@ const FS = {
       float spec = pow(max(dot(reflect(-lightDir, n), vec3(0.0, 0.0, 1.0)), 0.0), 24.0);
       float shade = dot(n, lightDir);
 
-      // dot grid displaced by the velocity field (refraction-ish)
-      vec2 vel = texture2D(uVelocity, vUv).xy;
-      vec2 disp = vel * 0.012 * uWarp;
-      float dl = length(disp); if (dl > 28.0) disp *= 28.0 / dl;
-      vec2 px = gl_FragCoord.xy / uDpr + disp;
-      float spacing = 26.0;
-      vec2 cell = fract(px / spacing) - 0.5;
-      float d = length(cell) * spacing;
-      float dotMask = 1.0 - smoothstep(0.55, 1.35, d);
-      float gridA = 0.11 * uGrid * (1.0 + min(dl / 10.0, 1.6));
-
       vec3 col = uPaper;
-      col = mix(col, uInk, dotMask * gridA);
       col = mix(col, pigment * 0.92 + 0.08, a);
       col *= mix(1.0, 0.9 + 0.12 * shade, clamp(a * 1.6, 0.0, 1.0));
       col += spec * a * 0.35;
@@ -326,7 +314,7 @@ export function startFluid(canvas: HTMLCanvasElement, initialMode: FluidMode = "
     blit(dye.write); dye.swap();
   }
 
-  const paper = [0.965, 0.945, 0.906], ink = [0.114, 0.098, 0.082];
+  const paper = [0.965, 0.945, 0.906];
   function render() {
     const u = P.display.u;
     g.useProgram(P.display.p);
@@ -334,11 +322,7 @@ export function startFluid(canvas: HTMLCanvasElement, initialMode: FluidMode = "
     g.uniform1i(u.uTexture, dye.read.attach(0));
     g.uniform1i(u.uVelocity, velocity.read.attach(1));
     g.uniform3f(u.uPaper, paper[0], paper[1], paper[2]);
-    g.uniform3f(u.uInk, ink[0], ink[1], ink[2]);
     g.uniform1f(u.uDye, mode.dye);
-    g.uniform1f(u.uGrid, mode.grid);
-    g.uniform1f(u.uWarp, mode.warp);
-    g.uniform1f(u.uDpr, dpr);
     blit(null);
   }
 

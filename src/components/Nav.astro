@@ -1,11 +1,12 @@
 ---
 import { sections } from "../data/site";
+import Logo from "./Logo.astro";
 const path = Astro.url.pathname;
 ---
 
 <header class="nav-shell" transition:persist="nav">
   <nav class="nav glass" aria-label="Main">
-    <a href="/" class="mark" aria-label="Home"><span>rc</span></a>
+    <a href="/" class="mark" aria-label="Home — Rebecca Ceccatelli"><Logo bold /></a>
     <ul>
       {sections.map((s) => (
         <li>
@@ -46,7 +47,7 @@ const path = Astro.url.pathname;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
     transition: transform 0.6s var(--ease);
   }
-  .mark span { transform: translateY(-1px); }
+  .mark :global(svg) { height: 27px; width: auto; color: var(--ink); }
   .mark:hover { transform: rotate(-12deg) scale(1.05); }
   ul { display: flex; list-style: none; margin: 0; padding: 0; gap: 2px; overflow-x: auto; scrollbar-width: none; }
   ul::-webkit-scrollbar { display: none; }
