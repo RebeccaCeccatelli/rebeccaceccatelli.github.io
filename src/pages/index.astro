@@ -25,12 +25,14 @@ const latest = days.slice(0, 6).flatMap((d) => d.items.map((i) => ({ ...i, label
       </div>
       <div class="hero-foot">
         <p class="lede" data-reveal style="--d:200ms">{profile.intro}</p>
-        <p class="hint small muted" data-reveal style="--d:320ms" aria-hidden="true"><span class="dot"></span>Move through the page — it moves back.</p>
       </div>
     </div>
+    <a class="scroll" href="#explore" aria-label="Scroll to the sections">
+      <svg viewBox="0 0 14 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 1v37M1.5 32.5 7 38l5.5-5.5"/></svg>
+    </a>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="explore">
     <div class="wrap">
       <ol class="index">
         {sections.map((s, i) => (
@@ -69,8 +71,12 @@ const latest = days.slice(0, 6).flatMap((d) => d.items.map((i) => ({ ...i, label
 </Base>
 
 <style>
-  .hero { min-height: 92svh; display: flex; align-items: center; padding: 140px 0 clamp(48px, 8vw, 96px); }
-  .name { font-family: var(--serif); font-size: clamp(2.6rem, 5.5vw, 4.4rem); line-height: 1; letter-spacing: -0.01em; margin: 20px 0 clamp(24px, 3.5vw, 36px); }
+  .hero { position: relative; min-height: 92svh; display: flex; align-items: center; padding: 140px 0 clamp(48px, 8vw, 96px); }
+  .name {
+    font-family: var(--serif); font-size: clamp(2.6rem, 5.5vw, 4.4rem); line-height: 1.05; letter-spacing: -0.01em;
+    margin: 20px 0 clamp(24px, 3.5vw, 36px); padding-right: 0.05em; width: fit-content;
+    background: linear-gradient(100deg, #5e4130, #a5784c); -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
   .hero-top { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 
   /* Portrait in a slowly morphing liquid frame */
@@ -89,10 +95,11 @@ const latest = days.slice(0, 6).flatMap((d) => d.items.map((i) => ({ ...i, label
     .portrait { width: 132px; margin: 0 0 0 6px; }
   }
   .hero-foot { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px 48px; }
-  .hint { display: inline-flex; align-items: center; gap: 10px; }
-  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--iris); box-shadow: 0 0 0 4px rgba(201, 162, 122, 0.25); animation: pulse 2.4s var(--ease) infinite; }
-  @keyframes pulse { 50% { box-shadow: 0 0 0 9px rgba(201, 162, 122, 0); } }
-  @media (pointer: coarse) { .hint { display: none; } }
+  /* scroll cue: a fine line with a chevron, drifting gently */
+  .scroll { position: absolute; left: 50%; bottom: clamp(20px, 4vh, 40px); translate: -50% 0; display: grid; place-items: center; width: 44px; height: 64px; color: var(--muted); transition: color 0.4s; }
+  .scroll:hover { color: var(--ink); }
+  .scroll svg { width: 14px; height: 40px; animation: drift 2.6s var(--ease) infinite; }
+  @keyframes drift { 0%, 100% { transform: translateY(-4px); opacity: 0.55; } 50% { transform: translateY(5px); opacity: 1; } }
 
   .index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
   .index li { border-bottom: 1px solid var(--line); }
