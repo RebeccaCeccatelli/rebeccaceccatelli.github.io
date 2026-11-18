@@ -10,13 +10,13 @@ const MODES: Record<FluidMode, { dye: number; grid: number; warp: number; force:
   subtle: { dye: 0.18, grid: 0.55, warp: 0.6, force: 0.6 },
 };
 
-// Iridescent pastel pigments: lilac, peach, aqua, rose, butter.
+// Warm cream pigments: champagne, sand, caramel, latte, soft gold.
 const PALETTE: [number, number, number][] = [
-  [0.62, 0.52, 1.0],
-  [1.0, 0.66, 0.5],
-  [0.42, 0.85, 0.82],
-  [0.98, 0.56, 0.74],
-  [1.0, 0.85, 0.48],
+  [0.95, 0.88, 0.74],
+  [0.9, 0.8, 0.64],
+  [0.84, 0.68, 0.5],
+  [0.8, 0.7, 0.58],
+  [0.92, 0.8, 0.58],
 ];
 
 const cfg = {
@@ -103,7 +103,7 @@ const FS = {
     void main () {
       vec3 dye = texture2D(uTexture, vUv).rgb;
       float amt = max(dye.r, max(dye.g, dye.b));
-      vec3 pigment = dye / max(amt, 0.0001);
+      vec3 pigment = dye / max(amt, 0.0001) * 0.9; // a touch deeper than the paper
       float a = min((1.0 - exp(-amt * 2.2)) * uDye, 0.32);
 
       // lighting from the dye's height field gives the "liquid" sheen
@@ -323,7 +323,7 @@ export function startFluid(canvas: HTMLCanvasElement, initialMode: FluidMode = "
     blit(dye.write); dye.swap();
   }
 
-  const paper = [0.969, 0.961, 0.941], ink = [0.09, 0.086, 0.11];
+  const paper = [0.965, 0.945, 0.906], ink = [0.114, 0.098, 0.082];
   function render() {
     const u = P.display.u;
     g.useProgram(P.display.p);

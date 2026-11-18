@@ -78,8 +78,8 @@ const latest = days.slice(0, 6).flatMap((d) => d.items.map((i) => ({ ...i, label
   /* Portrait in a slowly morphing liquid frame */
   .portrait { position: relative; margin: 0 clamp(0px, 4vw, 64px) 0 0; width: clamp(150px, 19vw, 240px); aspect-ratio: 1; flex: none; }
   .portrait :global(img), .halo { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 47% 53% 42% 58% / 55% 44% 56% 45%; animation: morph 14s ease-in-out infinite; }
-  .portrait :global(img) { object-fit: cover; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 30px 60px -28px rgba(70, 45, 140, 0.45); }
-  .halo { inset: -14px; width: auto; height: auto; background: conic-gradient(from 0deg, #c9bcff, #ffd2bc, #aee8e4, #f7b2cf, #c9bcff); filter: blur(18px); opacity: 0.75; animation: morph 14s ease-in-out infinite reverse, spin 22s linear infinite; }
+  .portrait :global(img) { object-fit: cover; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 30px 60px -28px rgba(90, 60, 30, 0.4); }
+  .halo { inset: -14px; width: auto; height: auto; background: conic-gradient(from 0deg, #ecdcbf, #d9b98c, #f3e7d2, #c9a27a, #ecdcbf); filter: blur(18px); opacity: 0.75; animation: morph 14s ease-in-out infinite reverse, spin 22s linear infinite; }
   @keyframes morph {
     0%, 100% { border-radius: 47% 53% 42% 58% / 55% 44% 56% 45%; }
     33% { border-radius: 58% 42% 55% 45% / 45% 58% 42% 55%; }
@@ -92,8 +92,8 @@ const latest = days.slice(0, 6).flatMap((d) => d.items.map((i) => ({ ...i, label
   }
   .hero-foot { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px 48px; }
   .hint { display: inline-flex; align-items: center; gap: 10px; }
-  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--iris); box-shadow: 0 0 0 4px rgba(158, 133, 255, 0.15); animation: pulse 2.4s var(--ease) infinite; }
-  @keyframes pulse { 50% { box-shadow: 0 0 0 9px rgba(158, 133, 255, 0); } }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--iris); box-shadow: 0 0 0 4px rgba(201, 162, 122, 0.25); animation: pulse 2.4s var(--ease) infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 9px rgba(201, 162, 122, 0); } }
   @media (pointer: coarse) { .hint { display: none; } }
 
   .index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }

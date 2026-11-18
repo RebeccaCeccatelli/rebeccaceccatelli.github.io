@@ -1,22 +1,21 @@
 /* ─── Tokens ─────────────────────────────────────────────────────────────── */
 :root {
   color-scheme: light;
-  --paper: #f7f5f0;
-  --paper-2: #efebe3;
+  --paper: #f6f1e7;
+  --paper-2: #ece4d4;
   --surface: rgba(255, 255, 255, 0.62);
   --surface-strong: rgba(255, 255, 255, 0.86);
-  --ink: #17161c;
-  --ink-2: #44424c;
-  --muted: #7a7783;
-  --line: rgba(23, 22, 28, 0.1);
-  --line-2: rgba(23, 22, 28, 0.18);
+  --ink: #1d1915;
+  --ink-2: #4a4239;
+  --muted: #857b6e;
+  --line: rgba(29, 25, 21, 0.1);
+  --line-2: rgba(29, 25, 21, 0.18);
 
-  --lilac: #9e85ff;
-  --peach: #ffa982;
-  --aqua: #6dd7d0;
-  --rose: #f68fbd;
-  --accent: #5a45d6; /* links & focus: a deep ink-violet that reads on paper */
-  --iris: linear-gradient(120deg, #c9bcff 0%, #ffd2bc 45%, #aee8e4 100%);
+  --sand: #e6d5b8;
+  --caramel: #c9a27a;
+  --bronze: #9c7350;
+  --accent: #8a5a36; /* links & focus: a warm umber that reads on cream */
+  --iris: linear-gradient(120deg, #efe2c8 0%, #e2c9a4 50%, #f4ebdb 100%); /* cream gradient */
 
   --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -25,7 +24,7 @@
   --r: 18px;
   --r-lg: 28px;
   --shadow: 0 1px 1px rgba(23, 22, 28, 0.03), 0 8px 24px -12px rgba(23, 22, 28, 0.12);
-  --shadow-lift: 0 1px 1px rgba(23, 22, 28, 0.04), 0 24px 48px -20px rgba(60, 40, 120, 0.22);
+  --shadow-lift: 0 1px 1px rgba(23, 22, 28, 0.04), 0 24px 48px -20px rgba(90, 60, 30, 0.2);
 
   --gutter: clamp(16px, 4vw, 40px);
   --max: 1160px;
@@ -47,7 +46,7 @@ body {
 }
 img, svg, video, iframe { display: block; max-width: 100%; }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-::selection { background: #e2d9ff; }
+::selection { background: #ecdcbd; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 h1, h2, h3 { margin: 0; font-weight: 400; }
 p { margin: 0; }
@@ -64,7 +63,7 @@ p { margin: 0; }
 .h3 { font-family: var(--sans); font-size: 1.06rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.35; }
 .ital { font-style: italic; }
 .iris-text {
-  background: linear-gradient(100deg, #6b52f0, #e0628f 50%, #e9824f 80%);
+  background: linear-gradient(100deg, #5e3f27, #9c6d45 55%, #c4955f 90%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
   padding-right: 0.06em; /* italic overhang */
 }

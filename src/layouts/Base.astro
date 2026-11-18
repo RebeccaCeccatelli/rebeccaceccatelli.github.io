@@ -25,7 +25,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#f7f5f0" />
+    <meta name="theme-color" content="#f6f1e7" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -54,9 +54,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       .paper-fallback {
         position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0; transition: opacity 1s;
         background:
-          radial-gradient(40vw 30vw at 80% 10%, rgba(201, 188, 255, 0.45), transparent 70%),
-          radial-gradient(36vw 28vw at 10% 70%, rgba(255, 210, 188, 0.4), transparent 70%),
-          radial-gradient(30vw 24vw at 60% 95%, rgba(174, 232, 228, 0.4), transparent 70%);
+          radial-gradient(40vw 30vw at 80% 10%, rgba(230, 213, 184, 0.55), transparent 70%),
+          radial-gradient(36vw 28vw at 10% 70%, rgba(222, 196, 158, 0.4), transparent 70%),
+          radial-gradient(30vw 24vw at 60% 95%, rgba(240, 228, 206, 0.6), transparent 70%);
       }
       html.no-fluid .paper-fallback { opacity: 1; }
       html.no-fluid #fluid { display: none; }
