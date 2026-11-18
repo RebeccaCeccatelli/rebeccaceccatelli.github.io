@@ -23,7 +23,7 @@ export const profile = {
 export const sections = [
   { href: "/work/", label: "Work", title: "Professional", blurb: "Data engineering, distributed systems and research — the CV, properly laid out." },
   { href: "/music/", label: "Music", title: "Music", blurb: "Twenty years at the piano, a Master's in Performance, and recordings from the stage." },
-  { href: "/tonic/", label: "Tonic", title: "Tonic — the thesis", blurb: "Energy-Based Transformers that draft, score and refine music. MIT Media Lab × ETH Zürich." },
+  { href: "/thesis/", label: "Thesis", title: "Tonic — the thesis", blurb: "Energy-Based Transformers that draft, score and refine music. MIT Media Lab × ETH Zürich." },
   { href: "/life/", label: "Life", title: "Life", blurb: "Passions, small stories and photos with the people who make it fun." },
   { href: "/cues/", label: "Cues", title: "Thoughts & Cues", blurb: "A running log of art, music, books and ideas I found worth passing on." },
 ] as const;
